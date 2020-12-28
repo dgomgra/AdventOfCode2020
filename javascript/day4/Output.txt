@@ -1,0 +1,548 @@
+BYR: 1971
+Pass ko
+{"byr":"1971","iyr":"2017","eyr":"2020","hgt":"160cm","hcl":"","ecl":"hzl","pid":"157096267","cid":""}
+BYR: 1966
+Pass ko
+{"byr":"1966","iyr":"2013","eyr":"2020","hgt":"183cm","hcl":"","ecl":"oth","pid":"368895060","cid":""}
+BYR: 2004
+Pass ok
+{"byr":"2004","iyr":"2014","eyr":"1983","hgt":"70cm","hcl":"1f7352","ecl":"lzr","pid":"192cm","cid":"279"}
+Pass ok
+{"byr":"1938","iyr":"2018","eyr":"2024","hgt":"172cm","hcl":"#602927","ecl":"blu","pid":"839621424","cid":""}
+Pass ok
+{"byr":"2011","iyr":"2012","eyr":"1933","hgt":"155in","hcl":"#6b5442","ecl":"#12f268","pid":"189cm","cid":""}
+BYR: 1954
+Pass ko
+{"byr":"1954","iyr":"2019","eyr":"2028","hgt":"151cm","hcl":"","ecl":"gry","pid":"664227667","cid":""}
+Pass ok
+{"byr":"1931","iyr":"2017","eyr":"2028","hgt":"67in","hcl":"#fffffd","ecl":"gry","pid":"459927933","cid":""}
+Pass ok
+{"byr":"1969","iyr":"2019","eyr":"2030","hgt":"163cm","hcl":"#a97842","ecl":"amb","pid":"472877556","cid":"322"}
+Pass ok
+{"byr":"2000","iyr":"2014","eyr":"2022","hgt":"180cm","hcl":"#733820","ecl":"brn","pid":"751634349","cid":"320"}
+Pass ok
+{"byr":"2029","iyr":"2010","eyr":"2028","hgt":"191cm","hcl":"#866857","ecl":"blu","pid":"170cm","cid":"123"}
+Pass ok
+{"byr":"1921","iyr":"2012","eyr":"2030","hgt":"161cm","hcl":"#4dd6d4","ecl":"grn","pid":"258660154","cid":"217"}
+Pass ok
+{"byr":"1978","iyr":"2010","eyr":"2022","hgt":"170cm","hcl":"#602927","ecl":"blu","pid":"399347273","cid":"109"}
+Pass ok
+{"byr":"1980","iyr":"2020","eyr":"2025","hgt":"183cm","hcl":"#18171d","ecl":"gry","pid":"172106685","cid":"289"}
+Pass ko
+{"byr":"2017","iyr":"2003","eyr":"","hgt":"85","hcl":"z","ecl":"#254ad9","pid":"169290741","cid":"77"}
+Pass ko
+{"byr":"1987","iyr":"2010","eyr":"","hgt":"155cm","hcl":"#fffffd","ecl":"oth","pid":"","cid":""}
+Pass ok
+{"byr":"1955","iyr":"2014","eyr":"2025","hgt":"187cm","hcl":"#623a2f","ecl":"brn","pid":"008305281","cid":"74"}
+Pass ok
+{"byr":"1960","iyr":"2016","eyr":"2027","hgt":"167cm","hcl":"#623a2f","ecl":"grn","pid":"428624233","cid":""}
+Pass ok
+{"byr":"1957","iyr":"2018","eyr":"2027","hgt":"171cm","hcl":"#ceb3a1","ecl":"oth","pid":"358876826","cid":"314"}
+Pass ko
+{"byr":"","iyr":"2011","eyr":"2030","hgt":"73in","hcl":"#602927","ecl":"grn","pid":"","cid":""}
+Pass ok
+{"byr":"2029","iyr":"2020","eyr":"2037","hgt":"76in","hcl":"9574d2","ecl":"#95d926","pid":"2703176","cid":""}
+Pass ko
+{"byr":"1949","iyr":"2014","eyr":"2020","hgt":"164cm","hcl":"#fffffd","ecl":"","pid":"591281293","cid":"136"}
+Pass ok
+{"byr":"1988","iyr":"2015","eyr":"2025","hgt":"73in","hcl":"#6b5442","ecl":"brn","pid":"899417027","cid":"268"}
+Pass ok
+{"byr":"1995","iyr":"2020","eyr":"2028","hgt":"177cm","hcl":"#b6652a","ecl":"hzl","pid":"594197202","cid":""}
+Pass ok
+{"byr":"1930","iyr":"2010","eyr":"2020","hgt":"179cm","hcl":"#a97842","ecl":"brn","pid":"010268954","cid":""}
+Pass ok
+{"byr":"2006","iyr":"2022","eyr":"2034","hgt":"168in","hcl":"#a97842","ecl":"#a8f84c","pid":"93390086","cid":"321"}
+Pass ok
+{"byr":"1935","iyr":"2016","eyr":"2028","hgt":"174cm","hcl":"#6b5442","ecl":"blu","pid":"187679418","cid":""}
+Pass ok
+{"byr":"1930","iyr":"2019","eyr":"2025","hgt":"164cm","hcl":"#888785","ecl":"oth","pid":"704379775","cid":""}
+BYR: 1962
+Pass ok
+{"byr":"1962","iyr":"2018","eyr":"1944","hgt":"171cm","hcl":"#6b5442","ecl":"hzl","pid":"675364934","cid":"168"}
+Pass ko
+{"byr":"","iyr":"1928","eyr":"2039","hgt":"166cm","hcl":"z","ecl":"zzz","pid":"26281402","cid":"144"}
+Pass ok
+{"byr":"1945","iyr":"2014","eyr":"2022","hgt":"64in","hcl":"#7d3b0c","ecl":"hzl","pid":"011589584","cid":""}
+Pass ok
+{"byr":"1950","iyr":"2010","eyr":"2028","hgt":"176cm","hcl":"#18171d","ecl":"grn","pid":"685748669","cid":""}
+BYR: 1989
+Pass ok
+{"byr":"1989","iyr":"2020","eyr":"2020","hgt":"163cm","hcl":"#18171d","ecl":"grn","pid":"721397788","cid":"308"}
+Pass ok
+{"byr":"2019","iyr":"1999","eyr":"2027","hgt":"69in","hcl":"z","ecl":"zzz","pid":"443496560","cid":"108"}
+Pass ok
+{"byr":"2018","iyr":"2027","eyr":"2011","hgt":"64","hcl":"z","ecl":"#574df9","pid":"#c9d804","cid":""}
+BYR: 1994
+Pass ok
+{"byr":"1994","iyr":"1926","eyr":"2026","hgt":"69cm","hcl":"fdcce6","ecl":"#28b358","pid":"76404593","cid":""}
+Pass ko
+{"byr":"1935","iyr":"","eyr":"2020","hgt":"165cm","hcl":"#efcc98","ecl":"hzl","pid":"978839539","cid":"121"}
+Pass ok
+{"byr":"1951","iyr":"2012","eyr":"2029","hgt":"186cm","hcl":"#fffffd","ecl":"amb","pid":"812513486","cid":""}
+Pass ok
+{"byr":"1924","iyr":"2027","eyr":"2023","hgt":"168in","hcl":"fcdd61","ecl":"grt","pid":"8474140699","cid":""}
+Pass ok
+{"byr":"1965","iyr":"2019","eyr":"2040","hgt":"166cm","hcl":"#866857","ecl":"oth","pid":"533941934","cid":""}
+Pass ok
+{"byr":"2028","iyr":"2009","eyr":"2032","hgt":"131","hcl":"z","ecl":"gmt","pid":"0795438812","cid":""}
+Pass ok
+{"byr":"1923","iyr":"2019","eyr":"2025","hgt":"167cm","hcl":"#341e13","ecl":"amb","pid":"222102208","cid":"102"}
+Pass ko
+{"byr":"1956","iyr":"2014","eyr":"2022","hgt":"180cm","hcl":"#888785","ecl":"oth","pid":"","cid":"175"}
+Pass ok
+{"byr":"1991","iyr":"2019","eyr":"2022","hgt":"164cm","hcl":"#cfa07d","ecl":"brn","pid":"002875069","cid":"216"}
+Pass ok
+{"byr":"1933","iyr":"2014","eyr":"2029","hgt":"185cm","hcl":"#341e13","ecl":"blu","pid":"537809907","cid":""}
+Pass ok
+{"byr":"1977","iyr":"2012","eyr":"2020","hgt":"166cm","hcl":"#59eb12","ecl":"oth","pid":"541909675","cid":"286"}
+Pass ok
+{"byr":"1921","iyr":"2019","eyr":"2027","hgt":"75in","hcl":"#18171d","ecl":"blu","pid":"440820443","cid":"329"}
+Pass ok
+{"byr":"1972","iyr":"2010","eyr":"2029","hgt":"177cm","hcl":"#733820","ecl":"amb","pid":"085529831","cid":""}
+Pass ok
+{"byr":"1981","iyr":"2018","eyr":"2026","hgt":"66in","hcl":"#b6652a","ecl":"#698ae8","pid":"704125918","cid":"141"}
+Pass ok
+{"byr":"1943","iyr":"2020","eyr":"2022","hgt":"191cm","hcl":"#7d3b0c","ecl":"blu","pid":"969407635","cid":""}
+Pass ok
+{"byr":"1986","iyr":"2023","eyr":"2012","hgt":"161cm","hcl":"#ceb3a1","ecl":"lzr","pid":"10899196","cid":""}
+Pass ok
+{"byr":"2028","iyr":"2030","eyr":"2020","hgt":"164cm","hcl":"#7d3b0c","ecl":"utc","pid":"#f8c441","cid":""}
+Pass ok
+{"byr":"2003","iyr":"2012","eyr":"2030","hgt":"187in","hcl":"z","ecl":"gry","pid":"150cm","cid":""}
+Pass ok
+{"byr":"1948","iyr":"2012","eyr":"2029","hgt":"155cm","hcl":"#6b5442","ecl":"brn","pid":"427618420","cid":""}
+Pass ko
+{"byr":"2025","iyr":"","eyr":"2021","hgt":"81","hcl":"z","ecl":"oth","pid":"174cm","cid":"66"}
+Pass ko
+{"byr":"2027","iyr":"1939","eyr":"1923","hgt":"110","hcl":"#888785","ecl":"lzr","pid":"","cid":"54"}
+Pass ko
+{"byr":"1961","iyr":"2019","eyr":"2022","hgt":"163cm","hcl":"#341e13","ecl":"amb","pid":"","cid":"137"}
+BYR: 2005
+Pass ok
+{"byr":"2005","iyr":"2020","eyr":"2016","hgt":"139","hcl":"#866857","ecl":"amb","pid":"181cm","cid":"181"}
+BYR: 2030
+Pass ok
+{"byr":"2030","iyr":"2014","eyr":"2021","hgt":"179cm","hcl":"#733820","ecl":"amb","pid":"7938817872","cid":"74"}
+Pass ok
+{"byr":"2024","iyr":"2019","eyr":"2023","hgt":"72cm","hcl":"91a6dd","ecl":"gmt","pid":"8440093771","cid":""}
+Pass ok
+{"byr":"1963","iyr":"2030","eyr":"2022","hgt":"74","hcl":"#b6652a","ecl":"grn","pid":"193189388","cid":"60"}
+Pass ok
+{"byr":"2012","iyr":"2023","eyr":"1951","hgt":"69cm","hcl":"z","ecl":"gmt","pid":"403849590","cid":"90"}
+Pass ok
+{"byr":"1976","iyr":"2010","eyr":"2027","hgt":"185cm","hcl":"#341e13","ecl":"amb","pid":"011326174","cid":"207"}
+BYR: 1944
+Pass ok
+{"byr":"1944","iyr":"2017","eyr":"2024","hgt":"64in","hcl":"#3be285","ecl":"gry","pid":"499837104","cid":""}
+Pass ok
+{"byr":"2004","iyr":"2022","eyr":"2032","hgt":"172","hcl":"deddda","ecl":"brn","pid":"#850d4e","cid":"244"}
+Pass ko
+{"byr":"","iyr":"2020","eyr":"2010","hgt":"74cm","hcl":"a3346d","ecl":"amb","pid":"#505713","cid":""}
+BYR: 1987
+Pass ko
+{"byr":"1987","iyr":"2012","eyr":"2023","hgt":"","hcl":"#a97842","ecl":"oth","pid":"131199420","cid":"112"}
+Pass ok
+{"byr":"2000","iyr":"2018","eyr":"2022","hgt":"160cm","hcl":"#a97842","ecl":"oth","pid":"637777693","cid":"256"}
+Pass ok
+{"byr":"1949","iyr":"2020","eyr":"2025","hgt":"152cm","hcl":"#866857","ecl":"grn","pid":"495224989","cid":"164"}
+Pass ko
+{"byr":"1986","iyr":"2010","eyr":"2020","hgt":"","hcl":"","ecl":"blu","pid":"304077824","cid":"288"}
+Pass ok
+{"byr":"1964","iyr":"2012","eyr":"2030","hgt":"182cm","hcl":"#18171d","ecl":"blu","pid":"047931925","cid":"167"}
+BYR: 1958
+Pass ok
+{"byr":"1958","iyr":"2019","eyr":"2023","hgt":"165cm","hcl":"#866857","ecl":"gry","pid":"553631683","cid":"109"}
+Pass ok
+{"byr":"1994","iyr":"2014","eyr":"2026","hgt":"184cm","hcl":"#b6652a","ecl":"brn","pid":"811368482","cid":"156"}
+Pass ko
+{"byr":"1943","iyr":"2011","eyr":"","hgt":"183cm","hcl":"#733820","ecl":"grn","pid":"265625165","cid":"344"}
+Pass ok
+{"byr":"1974","iyr":"2017","eyr":"2021","hgt":"160cm","hcl":"#c0946f","ecl":"brn","pid":"716422629","cid":"104"}
+Pass ok
+{"byr":"2002","iyr":"2011","eyr":"2025","hgt":"180cm","hcl":"#602927","ecl":"grn","pid":"887584172","cid":""}
+Pass ok
+{"byr":"1947","iyr":"2015","eyr":"2026","hgt":"177cm","hcl":"#888785","ecl":"brn","pid":"14483306","cid":""}
+Pass ok
+{"byr":"1999","iyr":"2012","eyr":"2020","hgt":"163","hcl":"#b6652a","ecl":"#64783e","pid":"651615946","cid":""}
+Pass ko
+{"byr":"","iyr":"2014","eyr":"2028","hgt":"188cm","hcl":"#a31066","ecl":"gry","pid":"503058612","cid":""}
+Pass ko
+{"byr":"2023","iyr":"","eyr":"2031","hgt":"178cm","hcl":"z","ecl":"amb","pid":"17656631","cid":""}
+Pass ko
+{"byr":"1955","iyr":"","eyr":"2023","hgt":"166cm","hcl":"#341e13","ecl":"grn","pid":"783568747","cid":""}
+Pass ok
+{"byr":"1989","iyr":"2016","eyr":"2023","hgt":"161cm","hcl":"#fffffd","ecl":"amb","pid":"133770783","cid":""}
+Pass ok
+{"byr":"1986","iyr":"2011","eyr":"2020","hgt":"158cm","hcl":"#733820","ecl":"blu","pid":"099478576","cid":"75"}
+BYR: 1937
+Pass ok
+{"byr":"1937","iyr":"2018","eyr":"2029","hgt":"181cm","hcl":"#602927","ecl":"brn","pid":"911200183","cid":""}
+Pass ok
+{"byr":"2020","iyr":"1928","eyr":"1963","hgt":"60","hcl":"579202","ecl":"utc","pid":"157cm","cid":"253"}
+Pass ok
+{"byr":"1947","iyr":"1949","eyr":"2028","hgt":"163cm","hcl":"#a97842","ecl":"oth","pid":"284455762","cid":""}
+Pass ok
+{"byr":"1924","iyr":"2017","eyr":"2025","hgt":"182cm","hcl":"#18171d","ecl":"oth","pid":"898594506","cid":"222"}
+Pass ok
+{"byr":"1935","iyr":"2027","eyr":"1942","hgt":"160in","hcl":"#623a2f","ecl":"amb","pid":"#c090c3","cid":"162"}
+Pass ok
+{"byr":"2010","iyr":"2014","eyr":"2028","hgt":"160cm","hcl":"#623a2f","ecl":"blu","pid":"684765216","cid":""}
+BYR: 1958
+Pass ko
+{"byr":"1958","iyr":"2015","eyr":"2020","hgt":"154cm","hcl":"#a97842","ecl":"oth","pid":"","cid":"334"}
+BYR: 1930
+Pass ok
+{"byr":"1930","iyr":"2018","eyr":"2029","hgt":"184cm","hcl":"#b6652a","ecl":"oth","pid":"636691339","cid":"86"}
+Pass ko
+{"byr":"2009","iyr":"2025","eyr":"1999","hgt":"76cm","hcl":"z","ecl":"#043004","pid":"","cid":""}
+Pass ko
+{"byr":"","iyr":"2015","eyr":"2020","hgt":"98","hcl":"#ceb3a1","ecl":"utc","pid":"56419390","cid":""}
+Pass ok
+{"byr":"1927","iyr":"2014","eyr":"2022","hgt":"188cm","hcl":"#fffffd","ecl":"amb","pid":"602778565","cid":""}
+Pass ok
+{"byr":"1937","iyr":"2012","eyr":"2029","hgt":"68in","hcl":"#cfa07d","ecl":"hzl","pid":"7912057436","cid":"192"}
+Pass ok
+{"byr":"1954","iyr":"2015","eyr":"2025","hgt":"155cm","hcl":"#fffffd","ecl":"blu","pid":"559203670","cid":""}
+Pass ko
+{"byr":"1998","iyr":"2019","eyr":"","hgt":"161cm","hcl":"#341e13","ecl":"oth","pid":"230874778","cid":"312"}
+Pass ok
+{"byr":"1932","iyr":"2011","eyr":"2026","hgt":"163cm","hcl":"#733820","ecl":"amb","pid":"850176278","cid":""}
+Pass ok
+{"byr":"1972","iyr":"2017","eyr":"2030","hgt":"170cm","hcl":"#341e13","ecl":"brn","pid":"014731313","cid":""}
+Pass ok
+{"byr":"1950","iyr":"2012","eyr":"2025","hgt":"167cm","hcl":"#341e13","ecl":"gry","pid":"133005637","cid":"317"}
+Pass ko
+{"byr":"","iyr":"2029","eyr":"2034","hgt":"68in","hcl":"ec07ce","ecl":"hzl","pid":"745014772","cid":""}
+Pass ko
+{"byr":"1921","iyr":"","eyr":"","hgt":"165cm","hcl":"#a97842","ecl":"gry","pid":"609363367","cid":"263"}
+Pass ko
+{"byr":"2010","iyr":"2026","eyr":"2037","hgt":"","hcl":"18f308","ecl":"oth","pid":"192cm","cid":"239"}
+Pass ok
+{"byr":"1977","iyr":"2019","eyr":"2037","hgt":"186in","hcl":"d0e525","ecl":"brn","pid":"469740743","cid":"197"}
+Pass ok
+{"byr":"1996","iyr":"2021","eyr":"2024","hgt":"165cm","hcl":"e286e8","ecl":"hzl","pid":"797277746","cid":"254"}
+Pass ok
+{"byr":"1962","iyr":"2020","eyr":"2029","hgt":"190cm","hcl":"#b6652a","ecl":"oth","pid":"997137384","cid":"142"}
+Pass ok
+{"byr":"1962","iyr":"2020","eyr":"2029","hgt":"152cm","hcl":"#866857","ecl":"brn","pid":"701556397","cid":"121"}
+Pass ok
+{"byr":"1962","iyr":"2017","eyr":"2024","hgt":"155cm","hcl":"z","ecl":"grn","pid":"448098321","cid":"186"}
+Pass ok
+{"byr":"1999","iyr":"2016","eyr":"2022","hgt":"168cm","hcl":"#18171d","ecl":"blu","pid":"223995430","cid":"286"}
+Pass ok
+{"byr":"1985","iyr":"2017","eyr":"2028","hgt":"183cm","hcl":"#6b5442","ecl":"blu","pid":"227780276","cid":""}
+Pass ok
+{"byr":"1967","iyr":"2010","eyr":"2030","hgt":"190cm","hcl":"#888785","ecl":"oth","pid":"115829664","cid":"223"}
+BYR: 2028
+Pass ok
+{"byr":"2028","iyr":"2029","eyr":"1992","hgt":"186in","hcl":"z","ecl":"#849f7b","pid":"0688674980","cid":"64"}
+Pass ok
+{"byr":"1958","iyr":"2013","eyr":"2025","hgt":"153cm","hcl":"#ceb3a1","ecl":"grn","pid":"815357118","cid":""}
+Pass ok
+{"byr":"1949","iyr":"2013","eyr":"2029","hgt":"180cm","hcl":"#623a2f","ecl":"grn","pid":"038013822","cid":""}
+BYR: 1923
+Pass ko
+{"byr":"1923","iyr":"2020","eyr":"2027","hgt":"184cm","hcl":"#fffffd","ecl":"hzl","pid":"","cid":"299"}
+BYR: 1930
+Pass ko
+{"byr":"1930","iyr":"2012","eyr":"","hgt":"","hcl":"#87f2c8","ecl":"grn","pid":"787371085","cid":""}
+Pass ok
+{"byr":"1985","iyr":"2019","eyr":"2028","hgt":"183cm","hcl":"#623a2f","ecl":"grt","pid":"107626362","cid":""}
+BYR: 2011
+Pass ko
+{"byr":"2011","iyr":"2002","eyr":"","hgt":"68in","hcl":"#341e13","ecl":"#5dfa18","pid":"205853974","cid":""}
+BYR: 1954
+Pass ok
+{"byr":"1954","iyr":"2014","eyr":"2022","hgt":"184in","hcl":"13b9e3","ecl":"#b1759b","pid":"179cm","cid":""}
+BYR: 1957
+Pass ok
+{"byr":"1957","iyr":"2010","eyr":"2025","hgt":"183cm","hcl":"#efcc98","ecl":"grn","pid":"428260080","cid":"231"}
+BYR: 1956
+Pass ok
+{"byr":"1956","iyr":"2016","eyr":"2026","hgt":"174cm","hcl":"#623a2f","ecl":"gry","pid":"192cm","cid":""}
+BYR: 1923
+Pass ko
+{"byr":"1923","iyr":"","eyr":"2021","hgt":"167cm","hcl":"#602927","ecl":"blu","pid":"438732879","cid":"230"}
+Pass ok
+{"byr":"1948","iyr":"2017","eyr":"2029","hgt":"179cm","hcl":"#dd59ab","ecl":"xry","pid":"154cm","cid":""}
+Pass ok
+{"byr":"1981","iyr":"2014","eyr":"2021","hgt":"167cm","hcl":"#ceb3a1","ecl":"grn","pid":"926925947","cid":""}
+Pass ok
+{"byr":"2012","iyr":"1985","eyr":"2023","hgt":"162cm","hcl":"#18171d","ecl":"#ff3e10","pid":"652196636","cid":"171"}
+Pass ok
+{"byr":"1929","iyr":"2013","eyr":"2029","hgt":"166cm","hcl":"#866857","ecl":"brn","pid":"499909488","cid":""}
+Pass ok
+{"byr":"1992","iyr":"2010","eyr":"2020","hgt":"179cm","hcl":"#888785","ecl":"brn","pid":"440245122","cid":"181"}
+Pass ko
+{"byr":"1995","iyr":"2014","eyr":"2029","hgt":"","hcl":"#888785","ecl":"hzl","pid":"274994154","cid":""}
+Pass ko
+{"byr":"","iyr":"2030","eyr":"2034","hgt":"157","hcl":"z","ecl":"hzl","pid":"3195072620","cid":"130"}
+Pass ok
+{"byr":"1996","iyr":"2016","eyr":"2029","hgt":"192cm","hcl":"#1b0a51","ecl":"blu","pid":"129985083","cid":"236"}
+Pass ok
+{"byr":"1927","iyr":"1982","eyr":"2028","hgt":"155in","hcl":"#cfa07d","ecl":"lzr","pid":"899902347","cid":""}
+Pass ok
+{"byr":"1986","iyr":"2018","eyr":"2029","hgt":"169cm","hcl":"#efcc98","ecl":"amb","pid":"760318090","cid":"187"}
+Pass ko
+{"byr":"1995","iyr":"2019","eyr":"2021","hgt":"169cm","hcl":"#fffffd","ecl":"","pid":"532530085","cid":""}
+Pass ok
+{"byr":"2006","iyr":"1980","eyr":"2019","hgt":"72cm","hcl":"z","ecl":"#2f2221","pid":"6532875244","cid":""}
+Pass ok
+{"byr":"1920","iyr":"2013","eyr":"2026","hgt":"174cm","hcl":"#1814d1","ecl":"gry","pid":"#14fae7","cid":""}
+BYR: 1978
+Pass ok
+{"byr":"1978","iyr":"2018","eyr":"2028","hgt":"183cm","hcl":"#ceb3a1","ecl":"grn","pid":"566862236","cid":""}
+Pass ok
+{"byr":"1940","iyr":"2020","eyr":"2027","hgt":"60cm","hcl":"#b6652a","ecl":"amb","pid":"618246345","cid":"242"}
+Pass ok
+{"byr":"1957","iyr":"2018","eyr":"2023","hgt":"162cm","hcl":"#18171d","ecl":"grn","pid":"325895714","cid":""}
+BYR: 2024
+Pass ok
+{"byr":"2024","iyr":"2016","eyr":"2022","hgt":"119","hcl":"z","ecl":"#a3ed7b","pid":"185cm","cid":"350"}
+Pass ko
+{"byr":"2004","iyr":"2010","eyr":"2032","hgt":"137","hcl":"6019c5","ecl":"gmt","pid":"","cid":"326"}
+BYR: 1943
+Pass ko
+{"byr":"1943","iyr":"","eyr":"2025","hgt":"178cm","hcl":"#e31a3d","ecl":"brn","pid":"477848102","cid":""}
+Pass ok
+{"byr":"2026","iyr":"2024","eyr":"2026","hgt":"192cm","hcl":"#a97842","ecl":"blu","pid":"#65fca1","cid":"293"}
+Pass ok
+{"byr":"1968","iyr":"2015","eyr":"2025","hgt":"186cm","hcl":"#341e13","ecl":"brn","pid":"318405093","cid":"181"}
+Pass ok
+{"byr":"1981","iyr":"2016","eyr":"2025","hgt":"166cm","hcl":"#c12f4b","ecl":"oth","pid":"652667870","cid":"311"}
+Pass ok
+{"byr":"2025","iyr":"2014","eyr":"2037","hgt":"160in","hcl":"138d5c","ecl":"hzl","pid":"#d9119b","cid":"206"}
+Pass ok
+{"byr":"2021","iyr":"2012","eyr":"2020","hgt":"90","hcl":"#7d3b0c","ecl":"#9438f4","pid":"51419740","cid":"141"}
+Pass ok
+{"byr":"2017","iyr":"2008","eyr":"1966","hgt":"91","hcl":"z","ecl":"#974ceb","pid":"#0bc613","cid":"284"}
+Pass ko
+{"byr":"2019","iyr":"1953","eyr":"2020","hgt":"","hcl":"z","ecl":"hzl","pid":"2969979","cid":"344"}
+Pass ko
+{"byr":"1925","iyr":"2020","eyr":"","hgt":"153cm","hcl":"#a97842","ecl":"gry","pid":"744660539","cid":"113"}
+Pass ok
+{"byr":"1986","iyr":"2015","eyr":"1968","hgt":"177","hcl":"#866857","ecl":"blu","pid":"856186682","cid":"167"}
+Pass ok
+{"byr":"1937","iyr":"2017","eyr":"2021","hgt":"183cm","hcl":"#a97842","ecl":"blu","pid":"149192621","cid":"91"}
+Pass ok
+{"byr":"1939","iyr":"2018","eyr":"2029","hgt":"154cm","hcl":"#602927","ecl":"oth","pid":"670669747","cid":"301"}
+Pass ok
+{"byr":"1921","iyr":"2016","eyr":"2025","hgt":"176cm","hcl":"#a97842","ecl":"oth","pid":"249412970","cid":""}
+BYR: 1969
+Pass ok
+{"byr":"1969","iyr":"2019","eyr":"2022","hgt":"75in","hcl":"9de0cb","ecl":"oth","pid":"644476999","cid":""}
+Pass ok
+{"byr":"1988","iyr":"2016","eyr":"2030","hgt":"164cm","hcl":"#efcc98","ecl":"gry","pid":"393258887","cid":""}
+Pass ok
+{"byr":"2023","iyr":"2017","eyr":"2023","hgt":"183cm","hcl":"z","ecl":"#766482","pid":"6930456","cid":"210"}
+Pass ok
+{"byr":"1966","iyr":"2011","eyr":"2020","hgt":"165cm","hcl":"#efcc98","ecl":"blu","pid":"691169980","cid":""}
+BYR: 1966
+Pass ok
+{"byr":"1966","iyr":"2011","eyr":"2029","hgt":"165cm","hcl":"#602927","ecl":"oth","pid":"945383793","cid":""}
+Pass ok
+{"byr":"2026","iyr":"2025","eyr":"1944","hgt":"187in","hcl":"8ac39a","ecl":"gry","pid":"567096741","cid":""}
+BYR: 2025
+Pass ko
+{"byr":"2025","iyr":"2015","eyr":"2025","hgt":"191","hcl":"","ecl":"grn","pid":"1659927272","cid":""}
+Pass ok
+{"byr":"1963","iyr":"2027","eyr":"2029","hgt":"63in","hcl":"#c0946f","ecl":"oth","pid":"874200881","cid":""}
+Pass ko
+{"byr":"1957","iyr":"2013","eyr":"2030","hgt":"","hcl":"#b37a48","ecl":"hzl","pid":"","cid":""}
+Pass ok
+{"byr":"2029","iyr":"2029","eyr":"2019","hgt":"153in","hcl":"z","ecl":"#956d7c","pid":"#38e0fd","cid":"103"}
+Pass ko
+{"byr":"1960","iyr":"2015","eyr":"2021","hgt":"186cm","hcl":"#854d9d","ecl":"","pid":"956654136","cid":""}
+BYR: 1995
+Pass ok
+{"byr":"1995","iyr":"2015","eyr":"2020","hgt":"178cm","hcl":"#b6652a","ecl":"amb","pid":"746523744","cid":""}
+Pass ko
+{"byr":"1956","iyr":"2020","eyr":"2020","hgt":"173cm","hcl":"","ecl":"blu","pid":"833595649","cid":"322"}
+Pass ok
+{"byr":"1996","iyr":"2017","eyr":"2020","hgt":"183cm","hcl":"#733820","ecl":"gry","pid":"537816651","cid":"160"}
+BYR: 2013
+Pass ko
+{"byr":"2013","iyr":"1920","eyr":"1932","hgt":"","hcl":"z","ecl":"","pid":"169cm","cid":""}
+Pass ok
+{"byr":"1947","iyr":"2020","eyr":"2030","hgt":"162cm","hcl":"#888785","ecl":"grn","pid":"571610070","cid":"258"}
+Pass ko
+{"byr":"2025","iyr":"2030","eyr":"2002","hgt":"155cm","hcl":"","ecl":"amb","pid":"","cid":""}
+BYR: 1923
+Pass ko
+{"byr":"1923","iyr":"2020","eyr":"","hgt":"","hcl":"#a97842","ecl":"hzl","pid":"090561426","cid":""}
+Pass ok
+{"byr":"1999","iyr":"2019","eyr":"2025","hgt":"178cm","hcl":"#c0946f","ecl":"hzl","pid":"026042669","cid":""}
+Pass ko
+{"byr":"2005","iyr":"2015","eyr":"2027","hgt":"74in","hcl":"","ecl":"gry","pid":"#28b09d","cid":""}
+Pass ko
+{"byr":"2014","iyr":"2028","eyr":"1953","hgt":"","hcl":"1af88d","ecl":"lzr","pid":"","cid":"202"}
+Pass ok
+{"byr":"1978","iyr":"2018","eyr":"2027","hgt":"171cm","hcl":"#930aef","ecl":"oth","pid":"706477697","cid":"99"}
+BYR: 1935
+Pass ok
+{"byr":"1935","iyr":"2017","eyr":"2029","hgt":"179cm","hcl":"#1b9aea","ecl":"amb","pid":"321873254","cid":"160"}
+Pass ok
+{"byr":"1996","iyr":"2013","eyr":"2023","hgt":"175cm","hcl":"#ceb3a1","ecl":"hzl","pid":"605962483","cid":"233"}
+Pass ko
+{"byr":"1943","iyr":"","eyr":"2021","hgt":"59in","hcl":"#ceb3a1","ecl":"brn","pid":"754905579","cid":""}
+Pass ok
+{"byr":"1935","iyr":"2020","eyr":"2021","hgt":"172cm","hcl":"#888785","ecl":"brn","pid":"643443673","cid":"110"}
+BYR: 1964
+Pass ok
+{"byr":"1964","iyr":"2024","eyr":"1935","hgt":"148","hcl":"#cfa07d","ecl":"gmt","pid":"635827422","cid":""}
+Pass ko
+{"byr":"2016","iyr":"2012","eyr":"2005","hgt":"178cm","hcl":"z","ecl":"","pid":"213073693","cid":""}
+Pass ok
+{"byr":"2027","iyr":"2027","eyr":"1988","hgt":"177cm","hcl":"#888785","ecl":"#b3cc58","pid":"172cm","cid":""}
+BYR: 1923
+Pass ko
+{"byr":"1923","iyr":"","eyr":"2029","hgt":"152cm","hcl":"#d9855b","ecl":"blu","pid":"068598146","cid":"134"}
+Pass ok
+{"byr":"1931","iyr":"2010","eyr":"2028","hgt":"188cm","hcl":"#18171d","ecl":"oth","pid":"174227992","cid":"309"}
+BYR: 1967
+Pass ok
+{"byr":"1967","iyr":"2010","eyr":"2032","hgt":"72in","hcl":"#623a2f","ecl":"brn","pid":"0090854908","cid":"266"}
+Pass ok
+{"byr":"1940","iyr":"2015","eyr":"2020","hgt":"192cm","hcl":"#efcc98","ecl":"gry","pid":"192554211","cid":"158"}
+Pass ko
+{"byr":"1957","iyr":"2019","eyr":"2025","hgt":"75in","hcl":"#c0946f","ecl":"brn","pid":"","cid":"248"}
+Pass ok
+{"byr":"1928","iyr":"2014","eyr":"2027","hgt":"193cm","hcl":"z","ecl":"blu","pid":"96533216","cid":"224"}
+Pass ok
+{"byr":"1968","iyr":"2010","eyr":"2022","hgt":"188cm","hcl":"#a97842","ecl":"gry","pid":"808830560","cid":"276"}
+BYR: 2024
+Pass ok
+{"byr":"2024","iyr":"2030","eyr":"1940","hgt":"158in","hcl":"z","ecl":"#2ea9ec","pid":"097590485","cid":"274"}
+Pass ko
+{"byr":"1982","iyr":"2014","eyr":"","hgt":"186cm","hcl":"#888785","ecl":"oth","pid":"616947922","cid":""}
+Pass ok
+{"byr":"1941","iyr":"2011","eyr":"2020","hgt":"190cm","hcl":"#efcc98","ecl":"blu","pid":"039744699","cid":""}
+BYR: 1971
+Pass ko
+{"byr":"1971","iyr":"2019","eyr":"2030","hgt":"65in","hcl":"","ecl":"hzl","pid":"076133019","cid":""}
+Pass ok
+{"byr":"1928","iyr":"2011","eyr":"2026","hgt":"172cm","hcl":"#c0946f","ecl":"blu","pid":"171544458","cid":""}
+Pass ok
+{"byr":"1929","iyr":"2015","eyr":"2020","hgt":"192cm","hcl":"#b6652a","ecl":"hzl","pid":"145819079","cid":""}
+Pass ok
+{"byr":"1981","iyr":"2017","eyr":"2024","hgt":"184cm","hcl":"#18171d","ecl":"amb","pid":"123467924","cid":""}
+BYR: 1957
+Pass ko
+{"byr":"1957","iyr":"2010","eyr":"","hgt":"65in","hcl":"#a97842","ecl":"oth","pid":"881258191","cid":""}
+Pass ok
+{"byr":"2030","iyr":"2021","eyr":"2020","hgt":"152cm","hcl":"#c0946f","ecl":"amb","pid":"9448811025","cid":"204"}
+Pass ok
+{"byr":"1944","iyr":"2014","eyr":"2022","hgt":"170cm","hcl":"#18171d","ecl":"blu","pid":"208725350","cid":"164"}
+Pass ko
+{"byr":"2007","iyr":"1939","eyr":"1952","hgt":"157in","hcl":"#18171d","ecl":"","pid":"788651896","cid":""}
+Pass ok
+{"byr":"1944","iyr":"2020","eyr":"2027","hgt":"188cm","hcl":"#cfa07d","ecl":"gry","pid":"463367304","cid":"87"}
+Pass ko
+{"byr":"1972","iyr":"2018","eyr":"","hgt":"164cm","hcl":"#6b5442","ecl":"hzl","pid":"990204374","cid":"272"}
+Pass ok
+{"byr":"1994","iyr":"2015","eyr":"2023","hgt":"155cm","hcl":"#18171d","ecl":"brn","pid":"791416860","cid":"278"}
+Pass ok
+{"byr":"1932","iyr":"2017","eyr":"2026","hgt":"159cm","hcl":"#18171d","ecl":"blu","pid":"904760812","cid":"245"}
+Pass ok
+{"byr":"1920","iyr":"2015","eyr":"2023","hgt":"175cm","hcl":"#6b5442","ecl":"blu","pid":"535891497","cid":"168"}
+Pass ok
+{"byr":"2000","iyr":"2012","eyr":"2028","hgt":"156cm","hcl":"#6b5442","ecl":"brn","pid":"765444727","cid":""}
+BYR: 2028
+Pass ok
+{"byr":"2028","iyr":"1988","eyr":"2005","hgt":"81","hcl":"8280e1","ecl":"#5fc7fc","pid":"9092484649","cid":""}
+Pass ok
+{"byr":"1928","iyr":"2010","eyr":"2020","hgt":"166cm","hcl":"#888785","ecl":"brn","pid":"596954301","cid":"275"}
+Pass ok
+{"byr":"1984","iyr":"2020","eyr":"2027","hgt":"166cm","hcl":"#602927","ecl":"gry","pid":"650001846","cid":"163"}
+Pass ok
+{"byr":"1985","iyr":"1925","eyr":"2030","hgt":"150cm","hcl":"#cfa07d","ecl":"#f16a95","pid":"67853501","cid":""}
+Pass ko
+{"byr":"2004","iyr":"1961","eyr":"1949","hgt":"73cm","hcl":"","ecl":"gry","pid":"055108092","cid":"218"}
+Pass ok
+{"byr":"1996","iyr":"2016","eyr":"2024","hgt":"62in","hcl":"#d99c14","ecl":"hzl","pid":"133523002","cid":""}
+Pass ok
+{"byr":"1979","iyr":"2019","eyr":"2026","hgt":"189cm","hcl":"#623a2f","ecl":"brn","pid":"172111665","cid":""}
+Pass ok
+{"byr":"1964","iyr":"2017","eyr":"1937","hgt":"169cm","hcl":"#733820","ecl":"#bfd0ee","pid":"33181449","cid":""}
+Pass ok
+{"byr":"1996","iyr":"2014","eyr":"2024","hgt":"68in","hcl":"#6b5442","ecl":"grn","pid":"577055593","cid":""}
+Pass ko
+{"byr":"2015","iyr":"","eyr":"2039","hgt":"154cm","hcl":"z","ecl":"brn","pid":"2453663020","cid":"150"}
+Pass ok
+{"byr":"1978","iyr":"2010","eyr":"2022","hgt":"167cm","hcl":"#efcc98","ecl":"grn","pid":"180446111","cid":""}
+BYR: 1942
+Pass ok
+{"byr":"1942","iyr":"2020","eyr":"2028","hgt":"152cm","hcl":"z","ecl":"gry","pid":"#cce9cf","cid":""}
+Pass ok
+{"byr":"1925","iyr":"2019","eyr":"2020","hgt":"183cm","hcl":"#341e13","ecl":"brn","pid":"589837530","cid":"157"}
+BYR: 2009
+Pass ko
+{"byr":"2009","iyr":"1927","eyr":"2034","hgt":"164cm","hcl":"#cfa07d","ecl":"","pid":"179cm","cid":""}
+Pass ok
+{"byr":"1940","iyr":"2012","eyr":"2028","hgt":"193cm","hcl":"#866857","ecl":"oth","pid":"716964854","cid":"113"}
+Pass ok
+{"byr":"1985","iyr":"2011","eyr":"2025","hgt":"62in","hcl":"#866857","ecl":"blu","pid":"454558712","cid":"301"}
+BYR: 1965
+Pass ok
+{"byr":"1965","iyr":"2016","eyr":"2025","hgt":"183cm","hcl":"#733820","ecl":"amb","pid":"855788635","cid":"140"}
+Pass ok
+{"byr":"2012","iyr":"1947","eyr":"1961","hgt":"75","hcl":"#efcc98","ecl":"#8abfc8","pid":"001357810","cid":"326"}
+Pass ko
+{"byr":"2014","iyr":"2019","eyr":"2040","hgt":"60cm","hcl":"","ecl":"utc","pid":"#e28da4","cid":""}
+Pass ok
+{"byr":"1997","iyr":"2018","eyr":"2022","hgt":"162cm","hcl":"#733820","ecl":"oth","pid":"708208638","cid":"326"}
+Pass ko
+{"byr":"2013","iyr":"1967","eyr":"","hgt":"73cm","hcl":"","ecl":"dne","pid":"8595504787","cid":""}
+BYR: 1986
+Pass ko
+{"byr":"1986","iyr":"2013","eyr":"","hgt":"181cm","hcl":"#18171d","ecl":"gry","pid":"808787977","cid":"205"}
+BYR: 2027
+Pass ok
+{"byr":"2027","iyr":"2009","eyr":"2024","hgt":"188in","hcl":"#c0946f","ecl":"dne","pid":"585147305","cid":""}
+Pass ok
+{"byr":"1920","iyr":"2019","eyr":"2020","hgt":"190cm","hcl":"#733820","ecl":"grn","pid":"042907748","cid":""}
+Pass ok
+{"byr":"1993","iyr":"2013","eyr":"2026","hgt":"156in","hcl":"33f9f8","ecl":"#603ad1","pid":"862887360","cid":""}
+Pass ok
+{"byr":"1960","iyr":"2016","eyr":"2030","hgt":"60in","hcl":"#a97842","ecl":"oth","pid":"655974048","cid":"285"}
+Pass ok
+{"byr":"1948","iyr":"2030","eyr":"1934","hgt":"143","hcl":"#72a0d3","ecl":"#7cd402","pid":"65806846","cid":""}
+Pass ko
+{"byr":"2022","iyr":"2012","eyr":"1937","hgt":"161cm","hcl":"z","ecl":"","pid":"#0f7c0a","cid":""}
+Pass ok
+{"byr":"1935","iyr":"2015","eyr":"2030","hgt":"191cm","hcl":"#fffffd","ecl":"hzl","pid":"778049989","cid":"240"}
+Pass ok
+{"byr":"1979","iyr":"2011","eyr":"2026","hgt":"179in","hcl":"#e196f6","ecl":"amb","pid":"231470794","cid":""}
+Pass ko
+{"byr":"","iyr":"2010","eyr":"2040","hgt":"72cm","hcl":"#6b5442","ecl":"oth","pid":"181cm","cid":""}
+Pass ko
+{"byr":"","iyr":"2016","eyr":"2026","hgt":"176cm","hcl":"#c5b999","ecl":"grn","pid":"113617276","cid":"117"}
+Pass ok
+{"byr":"1941","iyr":"2016","eyr":"1972","hgt":"60cm","hcl":"#7d3b0c","ecl":"zzz","pid":"846760253","cid":""}
+Pass ok
+{"byr":"1997","iyr":"2014","eyr":"2023","hgt":"181cm","hcl":"#623a2f","ecl":"oth","pid":"476193829","cid":"103"}
+Pass ok
+{"byr":"2028","iyr":"1940","eyr":"2039","hgt":"189","hcl":"7bb40c","ecl":"#b64a07","pid":"#e2ba33","cid":""}
+Pass ko
+{"byr":"1954","iyr":"2014","eyr":"","hgt":"73cm","hcl":"#7d3b0c","ecl":"#30a5e7","pid":"#3ecfd8","cid":""}
+Pass ko
+{"byr":"2011","iyr":"2024","eyr":"2023","hgt":"","hcl":"#18171d","ecl":"dne","pid":"512088455","cid":""}
+Pass ok
+{"byr":"1996","iyr":"2013","eyr":"2026","hgt":"150cm","hcl":"#7d3b0c","ecl":"brn","pid":"268556486","cid":""}
+Pass ko
+{"byr":"","iyr":"2014","eyr":"2030","hgt":"155cm","hcl":"#602927","ecl":"grn","pid":"222910621","cid":""}
+Pass ok
+{"byr":"1938","iyr":"2015","eyr":"2022","hgt":"185cm","hcl":"#866857","ecl":"hzl","pid":"530689228","cid":""}
+Pass ko
+{"byr":"2028","iyr":"2018","eyr":"","hgt":"169cm","hcl":"#b6652a","ecl":"lzr","pid":"706073193","cid":"150"}
+Pass ok
+{"byr":"1953","iyr":"2011","eyr":"2026","hgt":"171cm","hcl":"#6b5442","ecl":"gry","pid":"622763802","cid":""}
+Pass ok
+{"byr":"1925","iyr":"2024","eyr":"2032","hgt":"137","hcl":"#623a2f","ecl":"hzl","pid":"5033763648","cid":""}
+Pass ok
+{"byr":"1930","iyr":"2010","eyr":"2039","hgt":"160cm","hcl":"#602927","ecl":"#3e3e07","pid":"6999766453","cid":""}
+Pass ok
+{"byr":"1955","iyr":"2017","eyr":"2027","hgt":"122","hcl":"#733820","ecl":"amb","pid":"105302121","cid":""}
+BYR: 1971
+Pass ok
+{"byr":"1971","iyr":"2020","eyr":"2024","hgt":"193cm","hcl":"#95f96b","ecl":"brn","pid":"719337690","cid":""}
