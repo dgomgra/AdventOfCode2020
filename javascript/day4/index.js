@@ -185,6 +185,7 @@ function evaluaPasaporte2(pass) {
     if(pass.byr === "") {
         cont++;
     } else {
+        // let expr = /^[0-9]{4}$/;
         if(pass.byr.length === 4) {
             let number = parseInt(pass.byr);
             if(number >= 1920 && number <= 2002) {
@@ -242,7 +243,10 @@ function evaluaPasaporte2(pass) {
     if(pass.hcl === "") {
         cont++;
     } else {
-        
+        let expr = /^#[0-9a-f]{6}$/;
+        if(expr.test(pass.hcl)){
+            hcl = true;
+        }
     }
 
 
