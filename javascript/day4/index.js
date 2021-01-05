@@ -23,16 +23,16 @@ var pasaporte = {
 let pasa = pasaporte;
 for(let pas of listPastport) {
     if(pas === '') {
-        valor = evaluaPasaporte(pasa);
+        valor = evaluaPasaporte2(pasa);
         if(valor) {
             // console.log('Pass ok:', pasa);
-            fsw.appendFileSync('Output.txt', 'Pass ok' + '\n');
-            fsw.appendFileSync('Output.txt', JSON.stringify(pasa) + '\n');
+            // fsw.appendFileSync('Output.txt', 'Pass ok' + '\n');
+            // fsw.appendFileSync('Output.txt', JSON.stringify(pasa) + '\n');
             numPastportOK++;
         } else {
             // console.log('Pass ko:', pasa);
-            fsw.appendFileSync('Output.txt', 'Pass ko' + '\n');
-            fsw.appendFileSync('Output.txt', JSON.stringify(pasa) + '\n');
+            // fsw.appendFileSync('Output.txt', 'Pass ko' + '\n');
+            // fsw.appendFileSync('Output.txt', JSON.stringify(pasa) + '\n');
             numPastportKO++;
         }
         
@@ -87,7 +87,7 @@ for(let pas of listPastport) {
             // fsw.appendFileSync('Output.txt', 'ENTRA: ' + pas + '\n');
             // console.log('ENTRA: ', pas);
             if(pas.indexOf("byr:") > -1) {
-                fsw.appendFileSync('Output.txt', 'BYR: ' +  pas.substring(pas.indexOf("byr:") + 4, pas.length) + '\n');
+                // fsw.appendFileSync('Output.txt', 'BYR: ' +  pas.substring(pas.indexOf("byr:") + 4, pas.length) + '\n');
                 pasa.byr = pas.substring(pas.indexOf("byr:") + 4, pas.length);
             }
 
@@ -169,9 +169,8 @@ console.log('KO: ', numPastportKO);
 
 /* Part 2 */
 function evaluaPasaporte2(pass) {
+    const fsw = require('fs');
     let hayCid = false;
-    let cont = 0;
-
     let byr = false;
     let iyr = false;
     let eyr = false;
@@ -182,9 +181,7 @@ function evaluaPasaporte2(pass) {
     let cid = false;
 
     // Evaluamos el valor de byr
-    if(pass.byr === "") {
-        cont++;
-    } else {
+    if(pass.byr !== "") {
         // let expr = /^[0-9]{4}$/;
         if(pass.byr.length === 4) {
             let number = parseInt(pass.byr);
@@ -195,9 +192,7 @@ function evaluaPasaporte2(pass) {
     }
 
     // Evaluamos el valor de iyr
-    if(pass.iyr === "") {
-        cont++;
-    } else {
+    if(pass.iyr !== "") {
         if(pass.iyr.length === 4) {
             let number = parseInt(pass.iyr);
             if(number >=2010 && number <= 2020) {
@@ -207,21 +202,17 @@ function evaluaPasaporte2(pass) {
     }
 
     // Evaluamos eyr
-    if(pass.eyr === "") {
-        cont++;
-    } else {
-        if(pass.iyr.length === 4) {
-            let number = parseInt(pass.iyr);
+    if(pass.eyr !== "") {
+        if(pass.eyr.length === 4) {
+            let number = parseInt(pass.eyr);
             if(number >=2020 && number <= 2030) {
-                iyr = true;
+                eyr = true;
             }
         }
     }
 
     // Evaluamos hgt
-    if(pass.hgt === "") {
-        cont++;
-    } else {
+    if(pass.hgt !== "") {
         if(pass.hgt.indexOf("cm") > -1) {
             let datos = pass.hgt.split("cm");
             let num = parseInt(datos[0]);
@@ -240,35 +231,63 @@ function evaluaPasaporte2(pass) {
     }
 
     // Evaluamos el hcl
-    if(pass.hcl === "") {
-        cont++;
-    } else {
+    if(pass.hcl !== "") {
         let expr = /^#[0-9a-f]{6}$/;
         if(expr.test(pass.hcl)){
             hcl = true;
         }
     }
 
+    // Evaluamos el ecl
+    if(pass.ecl !== "") {
+        var mapa = new Map();
+        mapa.set('amb', 'amb');
+        mapa.set('blu', 'blu');
+        mapa.set('brn', 'brn');
+        mapa.set('gry', 'gry');
+        mapa.set('grn', 'grn');
+        mapa.set('hzl', 'hzl');
+        mapa.set('oth', 'oth');
 
-    if(pass.ecl === "") {
-        cont++;
+        if(mapa.has(pass.ecl)){
+            ecl = true;
+        }    
     }
-    if(pass.pid === "") {
-        cont++;
+    // Evaluamos el pid
+    if(pass.pid !== "") {
+        let expr = /^[0-9]{9}$/;
+        if(expr.test(pass.pid)){
+            pid = true;
+        }
     }
-    console.log('cid: ', pass.cid)
-    if(pass.cid === "") {
-        cont++;
-        hayCid = false;
-    } else {
-        hayCid = true;
-    }
+    // console.log('cid: ', pass.cid)
+    // if(pass.cid === "") {
+    //     hayCid = false;
+    // } else {
+    //     hayCid = true;
+    // }
 
-    if(cont === 0) {
-        return true;
-    } else if(cont === 1 && !hayCid) {
+    if(byr && iyr && eyr && hgt && hcl && ecl && pid) {
         return true;
     } else {
+        fsw.appendFileSync('Output.txt', 'INCORRECTO: ' +  JSON.stringify(pass) + '\n');
+        let errores = "";
+        if(!byr){
+            errores = 'byr:' + pass.byr;
+        } else if(!iyr){
+            errores = errores + ' - ' + 'iyr:' + pass.iyr;
+        } else if(!eyr){
+            errores = errores + ' - ' + 'eyr:' + pass.eyr;
+        } else if(!hgt){
+            errores = errores + ' - ' + 'hgt:' + pass.hgt;
+        } else if(!hcl){
+            errores = errores + ' - ' + 'hcl:' + pass.hcl;
+        } else if(!ecl){
+            errores = errores + ' - ' + 'ecl:' + pass.ecl;
+        } else if(!pid){
+            errores = errores + ' - ' + 'pid:' + pass.pid;
+        }
+        fsw.appendFileSync('Output.txt', 'ERRORES:'  +  errores + '\n');
         return false;
     }
 }

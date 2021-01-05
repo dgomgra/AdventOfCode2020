@@ -1,27 +1,23 @@
-Advent of Code[About][Events][Shop][Settings][Log Out]David G 7*
-   var y=2020;[Calendar][AoC++][Sponsors][Leaderboard][Stats]
-Our sponsors help make Advent of Code possible:
-McGraw Hill - You look smart! How did that happen? Help us build the tools that help teachers teach the next generation to be smart like you.
---- Day 4: Passport Processing ---
-You arrive at the airport only to realize that you grabbed your North Pole Credentials instead of your passport. While these documents are extremely similar, North Pole Credentials aren't issued by a country and therefore aren't actually valid documentation for travel in most of the world.
+--- Día 4: Procesamiento de pasaportes ---
+Llega al aeropuerto solo para darse cuenta de que obtuvo sus Credenciales del Polo Norte en lugar de su pasaporte. Si bien estos documentos son extremadamente similares, las credenciales del Polo Norte no las emite ningún país y, por lo tanto, no son documentos válidos para viajar en la mayor parte del mundo.
 
-It seems like you're not the only one having problems, though; a very long line has formed for the automatic passport scanners, and the delay could upset your travel itinerary.
+Sin embargo, parece que no eres el único que tiene problemas; Se ha formado una fila muy larga para los escáneres automáticos de pasaportes y el retraso podría alterar su itinerario de viaje.
 
-Due to some questionable network security, you realize you might be able to solve both of these problems at the same time.
+Debido a una seguridad de red cuestionable, se da cuenta de que podría resolver ambos problemas al mismo tiempo.
 
-The automatic passport scanners are slow because they're having trouble detecting which passports have all required fields. The expected fields are as follows:
+Los escáneres automáticos de pasaportes son lentos porque tienen problemas para detectar qué pasaportes tienen todos los campos obligatorios . Los campos esperados son los siguientes:
 
-byr (Birth Year)
-iyr (Issue Year)
-eyr (Expiration Year)
-hgt (Height)
-hcl (Hair Color)
-ecl (Eye Color)
+byr (Año de nacimiento)
+iyr (Año de emisión)
+eyr (Año de vencimiento)
+hgt (Altura)
+hcl (Color de pelo)
+ecl (Color de los ojos)
 pid (Passport ID)
-cid (Country ID)
-Passport data is validated in batch files (your puzzle input). Each passport is represented as a sequence of key:value pairs separated by spaces or newlines. Passports are separated by blank lines.
+cid (ID de país)
+Los datos del pasaporte se validan en archivos por lotes (su entrada de rompecabezas). Cada pasaporte se representa como una secuencia de key:valuepares separados por espacios o líneas nuevas. Los pasaportes están separados por líneas en blanco.
 
-Here is an example batch file containing four passports:
+Aquí hay un ejemplo de archivo por lotes que contiene cuatro pasaportes:
 
 ecl:gry pid:860033327 eyr:2020 hcl:#fffffd
 byr:1937 iyr:2017 cid:147 hgt:183cm
@@ -36,19 +32,17 @@ hgt:179cm
 
 hcl:#cfa07d eyr:2025 pid:166559648
 iyr:2011 ecl:brn hgt:59in
-The first passport is valid - all eight fields are present. The second passport is invalid - it is missing hgt (the Height field).
+El primer pasaporte es válido : los ocho campos están presentes. El segundo pasaporte no es válido : falta hgt(el campo Altura).
 
-The third passport is interesting; the only missing field is cid, so it looks like data from North Pole Credentials, not a passport at all! Surely, nobody would mind if you made the system temporarily ignore missing cid fields. Treat this "passport" as valid.
+El tercer pasaporte es interesante; el único campo que falta es cid, por lo que parece que son datos de North Pole Credentials, ¡no un pasaporte en absoluto! Seguramente, a nadie le importaría si hiciera que el sistema ignorara temporalmente los cidcampos faltantes . Trate este "pasaporte" como válido .
 
-The fourth passport is missing two fields, cid and byr. Missing cid is fine, but missing any other field is not, so this passport is invalid.
+Al cuarto pasaporte le faltan dos campos, cidy byr. Falta cidestá bien, pero falta cualquier otro campo no lo es, por lo que este pasaporte no es válido .
 
 According to the above rules, your improved system would report 2 valid passports.
 
 Count the number of valid passports - those that have all required fields. Treat cid as optional. In your batch file, how many passports are valid?
 
 Your puzzle answer was 182.
-
-The first half of this puzzle is complete! It provides one gold star: *
 
 --- Part Two ---
 The line is moving more quickly now, but you overhear airport security talking about how passports with invalid data are getting through. Better add some data validation, quick!
@@ -84,7 +78,7 @@ ecl invalid: wat
 
 pid valid:   000000001
 pid invalid: 0123456789
-Here are some invalid passports:
+Aquí hay algunos pasaportes inválidos:
 
 eyr:1972 cid:100
 hcl:#18171d ecl:amb hgt:170 pid:186cm iyr:2018 byr:1926
@@ -99,7 +93,7 @@ ecl:brn hgt:182cm pid:021572410 eyr:2020 byr:1992 cid:277
 hgt:59cm ecl:zzz
 eyr:2038 hcl:74454a iyr:2023
 pid:3556412378 byr:2007
-Here are some valid passports:
+Aquí hay algunos pasaportes válidos:
 
 pid:087499704 hgt:74in ecl:grn iyr:2012 eyr:2030 byr:1980
 hcl:#623a2f
@@ -113,11 +107,14 @@ pid:545766238 ecl:hzl
 eyr:2022
 
 iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719
-Count the number of valid passports - those that have all required fields and valid values. Continue to treat cid as optional. In your batch file, how many passports are valid?
+Cuente el número de pasaportes válidos : aquellos que tienen todos los campos obligatorios y valores válidos . Continúe tratando cidcomo opcional. En su archivo por lotes, ¿cuántos pasaportes son válidos?
 
-Answer: 
- 
+Tu respuesta al acertijo fue 109.
 
-Although it hasn't changed, you can still get your puzzle input.
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
 
-You can also [Share] this puzzle.
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.
