@@ -1,6 +1,53 @@
-/* Part 2 */
-let listAswered = ['abc', '', 'a','b','c','','ab','ac', '', 'a','a','a','a','', 'b', ''];
+/* Setup */
+const fs = require('fs');
+const path = require('path');
+const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf8');
 
+let listAswered = input.split('\n');
+/* Part 1*/
+resolvePart1();
+function resolvePart1(){
+    listGroups = [];
+    
+    let value = '';
+    for(let gr of listAswered){
+        if(gr === ''){
+            listGroups.push(value);
+            value = '';
+        } else {
+            value = value + gr;
+        }
+    }
+
+    console.log(listGroups.length);
+    
+    const fsw = require('fs');
+    
+    // Recorremos las respuestas de los grupos
+    let listRespYes = [];
+    for(let re of listGroups){
+        let resp = re.split('');
+        // añadimos las respuesta a un mapa
+        let mapResp = new Map();
+        for(let r of resp){
+            if(!mapResp.has(r)){
+                mapResp.set(r);
+            }
+        }
+        listRespYes.push(mapResp.size);
+    }
+    
+    
+    // sumamos las respuestas
+    let total = 0;
+    for(let val of listRespYes){
+        total = total + val;
+    }
+    
+    console.log('La respuesta a la primera parte: ',total);
+}
+
+/* Part 2 */
 resolvePart2();
 function resolvePart2() {
     let listGroups = [];
@@ -51,6 +98,10 @@ function resolvePart2() {
     // fsw.appendFileSync('Output.txt', listGroups + '\n');
     // fsw.appendFileSync('Output.txt', listGroups.length + '\n');
 
-    console.log(listFinal);
+    let total = 0;
+    for(let val of listFinal){
+        total = total + val;
+    }
+    console.log('La respuesta de la segunda parte: ', total );
 
 }
