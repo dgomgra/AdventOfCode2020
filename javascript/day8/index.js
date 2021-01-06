@@ -1,21 +1,14 @@
+/* Setup */
+const fs = require('fs');
+const path = require('path');
+const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf8');
 
-let program = [
-    "nop +0",
-    "acc +1",
-    "jmp +4",
-    "acc +3",
-    "jmp -3",
-    "acc -99",
-    "acc +1",
-    "jmp -4",
-    "acc +6",
-    ""
-];
+let program = input.split('\n');
 let acumulador = 0;
 let acumulador2 = 0;
 
 /* Part 1 */
-// resolvePart1();
+resolvePart1();
 function resolvePart1(){
     // Recorremos el programa
     let numLinea = 0;
@@ -50,6 +43,8 @@ function buscarLinea(num) {
     }
 
 }
+
+
 
 /* Part 2 */
 let mapLineasCambiadas = new Map();
@@ -112,3 +107,5 @@ function buscarLinea2(num) {
     }
 
 }
+
+

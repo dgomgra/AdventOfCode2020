@@ -1,0 +1,88 @@
+--- Día 8: Parada portátil ---
+Su vuelo al centro principal de la aerolínea alcanza la altitud de crucero sin incidentes. Mientras considera revisar el menú del vuelo en busca de una de esas bebidas que vienen con un pequeño paraguas, el niño que está sentado a su lado lo interrumpe.
+
+¡Su consola de juegos portátil no se enciende! Preguntan si puedes echar un vistazo.
+
+Reduces el problema a un extraño bucle infinito en el código de arranque (la entrada de tu rompecabezas) del dispositivo. Debería poder solucionarlo, pero primero debe poder ejecutar el código de forma aislada.
+
+El código de arranque se representa como un archivo de texto con una instrucción por línea de texto. Cada instrucción consiste en una operación ( acc, jmpo nop) y un argumento (como un número con signo +4o -20).
+
+accaumenta o disminuye un solo valor global llamado acumulador por el valor dado en el argumento. Por ejemplo, acc +7aumentaría el acumulador en 7. El acumulador comienza en 0. Después de una accinstrucción, la instrucción inmediatamente debajo de ella se ejecuta a continuación.
+jmp salta a una nueva instrucción relativa a sí mismo. La siguiente instrucción a ejecutar se encuentra usando el argumento como un desplazamiento de la jmpinstrucción; por ejemplo, jmp +2saltaría la siguiente instrucción, jmp +1continuaría con la instrucción inmediatamente debajo de ella y jmp -20haría que la instrucción 20 líneas arriba se ejecute a continuación.
+nopsignifica No OPeration - no hace nada. La instrucción inmediatamente debajo se ejecuta a continuación.
+Por ejemplo, considere el siguiente programa:
+
+nop +0
+acc +1
+jmp +4
+acc +3
+jmp -3
+acc -99
+acc +1
+jmp -4
+acc +6
+Estas instrucciones se visitan en este orden:
+
+nop +0  | 1
+acc +1  | 2, 8(!)
+jmp +4  | 3
+acc +3  | 6
+jmp -3  | 7
+acc -99 |
+acc +1  | 4
+jmp -4  | 5
+acc +6  |
+Primero, nop +0no hace nada. Luego, el acumulador se aumenta de 0 a 1 ( acc +1) y jmp +4establece la siguiente instrucción a la otra acc +1cerca del fondo. Después de que aumenta el acumulador de 1 a 2, se jmp -4ejecuta y establece la siguiente instrucción como única acc +3. Establece el acumulador en 5 y jmp -3hace que el programa continúe al principio acc +1.
+
+This is an infinite loop: with this sequence of jumps, the program will run forever. The moment the program tries to run any instruction a second time, you know it will never terminate.
+
+Immediately before the program would run an instruction a second time, the value in the accumulator is 5.
+
+Run your copy of the boot code. Immediately before any instruction is executed a second time, what value is in the accumulator?
+
+Your puzzle answer was 1489.
+
+--- Part Two ---
+After some careful analysis, you believe that exactly one instruction is corrupted.
+
+En algún lugar en el programa, ya sea una jmpse supone que es una nop, o una nopse supone que es una jmp. (Ninguna accinstrucción se vio afectada por la corrupción de este código de arranque).
+
+Se supone que el programa terminará al intentar ejecutar una instrucción inmediatamente después de la última instrucción en el archivo . Al cambiar exactamente uno jmpo nop, puede reparar el código de arranque y hacer que termine correctamente.
+
+Por ejemplo, considere el mismo programa de arriba:
+
+nop +0
+acc +1
+jmp +4
+acc +3
+jmp -3
+acc -99
+acc +1
+jmp -4
+acc +6
+Si cambia la primera instrucción de nop +0a jmp +0, se crearía un bucle infinito de una sola instrucción, sin dejar nunca esa instrucción. Si cambia casi cualquiera de las jmpinstrucciones, el programa eventualmente encontrará otra jmpinstrucción y se repetirá para siempre.
+
+Sin embargo, si cambia la penúltima instrucción (de jmp -4a nop -4), el programa termina. Las instrucciones se visitan en este orden:
+
+nop +0  | 1
+acc +1  | 2
+jmp +4  | 3
+acc +3  |
+jmp -3  |
+acc -99 |
+acc +1  | 4
+nop -4  | 5
+acc +6  | 6
+Después de la última instrucción ( acc +6), el programa finaliza al intentar ejecutar la instrucción debajo de la última instrucción en el archivo. Con este cambio, después de la expiración de programa, el acumulador contiene el valor 8( acc +1, acc +1, acc +6).
+
+Arregle el programa para que termine normalmente cambiando exactamente uno jmp(a nop) o nop(a jmp). ¿Cuál es el valor del acumulador después de que finaliza el programa?
+
+Tu respuesta al acertijo fue 1539.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.
