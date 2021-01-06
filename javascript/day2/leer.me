@@ -1,0 +1,45 @@
+--- Día 2: Filosofía de la contraseña ---
+Su vuelo sale en unos días del aeropuerto costero; la forma más fácil de bajar a la costa desde aquí es en trineo .
+
+El tendero de la tienda de alquiler de trineos del Polo Norte está teniendo un mal día. "Algo está mal con nuestras computadoras; ¡no podemos iniciar sesión!" Preguntas si puedes echar un vistazo.
+
+Su base de datos de contraseñas parece estar un poco dañada: algunas de las contraseñas no hubieran sido permitidas por la Política Corporativa Oficial de Tobogán que estaba en vigor cuando fueron elegidas.
+
+Para intentar depurar el problema, han creado una lista (la entrada de su rompecabezas) de contraseñas (de acuerdo con la base de datos dañada) y la política corporativa cuando se estableció esa contraseña .
+
+Por ejemplo, suponga que tiene la siguiente lista:
+
+1-3 a: abcde
+1-3 b: cdefg
+2-9 c: ccccccccc
+Cada línea proporciona la política de contraseñas y luego la contraseña. La política de contraseñas indica el número más bajo y más alto de veces que debe aparecer una letra determinada para que la contraseña sea válida. Por ejemplo, 1-3 asignifica que la contraseña debe contener aal menos 1tiempo y la mayoría de las 3veces.
+
+En el ejemplo anterior, las 2contraseñas son válidas. La contraseña del medio cdefg, no lo es; no contiene instancias de b, pero necesita al menos 1. La primera y la tercera contraseñas son válidas: contienen una ao nueve c, ambas dentro de los límites de sus respectivas políticas.
+
+¿Cuántas contraseñas son válidas según sus políticas?
+
+Tu respuesta al acertijo fue 474.
+
+--- La segunda parte ---
+Si bien parece que validó las contraseñas correctamente, no parecen ser lo que espera el Sistema de autenticación corporativa oficial de Toboggan.
+
+¡El comerciante de repente se da cuenta de que accidentalmente explicó las reglas de la política de contraseñas de su antiguo trabajo en el lugar de alquiler de trineos al final de la calle! La Política Corporativa Oficial de Toboggan en realidad funciona de manera un poco diferente.
+
+Cada política en realidad describe dos posiciones en la contraseña , donde 1significa el primer carácter, 2significa el segundo carácter, y así sucesivamente. (Tenga cuidado, las políticas corporativas de Toboggan no tienen el concepto de "índice cero"). Exactamente una de estas posiciones debe contener la letra indicada. Otras ocurrencias de la carta son irrelevantes a los efectos de la aplicación de la política.
+
+Dada la misma lista de ejemplo de arriba:
+
+1-3 a: abcdees válido : la posición 1contiene ay la posición 3no.
+1-3 b: cdefgno es válido : ni la posición 1ni la posición 3contienen b.
+2-9 c: cccccccccno es válido : tanto la posición 2como la posición 9contienen c.
+¿Cuántas contraseñas son válidas según la nueva interpretación de las políticas?
+
+Tu respuesta al acertijo fue 745.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.

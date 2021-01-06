@@ -1,0 +1,58 @@
+--- Día 5: Embarque binario ---
+Usted aborda su avión solo para descubrir un nuevo problema: ¡dejó caer su tarjeta de embarque! No está seguro de cuál es el asiento suyo, y todos los asistentes de vuelo están ocupados con la avalancha de personas que de repente pasaron por el control de pasaportes.
+
+Escribe un programa rápido para usar la cámara de su teléfono para escanear todas las tarjetas de embarque cercanas (su entrada de rompecabezas); tal vez puedas encontrar tu asiento mediante el proceso de eliminación.
+
+En lugar de zonas o grupos , esta aerolínea utiliza particiones binarias del espacio para sentar a las personas. Un asiento puede especificarse como FBFBBFFRLR, donde Fsignifica "adelante", Bsignifica "atrás", Lsignifica "izquierda" y Rsignifica "derecha".
+
+Los primeros 7 caracteres serán Fo B; estos especifican exactamente una de las 128 filas en el plano (numeradas 0hasta el final 127). Cada letra le dice en qué mitad de una región se encuentra el asiento dado. Comience con la lista completa de filas; la primera letra indica si el asiento está al frente (a 0través 63) o atrás (a 64través 127). La siguiente letra indica en qué mitad de esa región se encuentra el asiento, y así sucesivamente hasta que quede exactamente una fila.
+
+Por ejemplo, considere solo los primeros siete caracteres de FBFBBFFRLR:
+
+Para empezar, teniendo en cuenta toda la gama, filas 0través 127.
+Fsignifica tomar la mitad inferior , manteniendo las filas a 0través 63.
+Bsignifica tomar la mitad superior , manteniendo las filas a 32través 63.
+Fsignifica tomar la mitad inferior , manteniendo las filas a 32través 47.
+Bsignifica tomar la mitad superior , manteniendo las filas a 40través 47.
+Bmantiene las filas a 44través 47.
+Fmantiene las filas a 44través 45.
+La final Fmantiene la fila44 más baja de las dos .
+Los últimos tres caracteres serán Lo R; que se especifican exactamente una de las 8 columnas de asientos en el avión (numeradas 0a través 7). El mismo proceso anterior continúa nuevamente, esta vez con solo tres pasos. Lsignifica mantener la mitad inferior , mientras que Rsignifica mantener la mitad superior .
+
+Por ejemplo, considere solo los últimos 3 caracteres de FBFBBFFRLR:
+
+Para empezar, teniendo en cuenta toda la gama, columnas 0través 7.
+Rsignifica tomar la mitad superior , manteniendo las columnas a 4través 7.
+Lsignifica tomar la mitad inferior , manteniendo las columnas a 4través 5.
+La final Rmantiene la columna5 superior de las dos .
+Entonces, la decodificación FBFBBFFRLRrevela que es el asiento en fila 44, columna5 .
+
+Cada asiento también tiene un ID de asiento único : multiplique la fila por 8 y luego agregue la columna. En este ejemplo, el asiento tiene ID .44 * 8 + 5 = 357
+
+Aquí hay algunas otras tarjetas de embarque:
+
+BFFFBBFRRR: fila 70, columna 7, ID de asiento 567.
+FFFBBBFRRR: fila 14, columna 7, ID de asiento 119.
+BBFFBBFRLL: fila 102, columna 4, ID de asiento 820.
+Como prueba de cordura, revise su lista de tarjetas de embarque. ¿Cuál es la identificación de asiento más alta en una tarjeta de embarque?
+
+Tu respuesta al acertijo fue 848.
+
+--- La segunda parte ---
+¡Timbre! Se han encendido las señales de "abrocharse el cinturón de seguridad". Es hora de encontrar tu asiento.
+
+Es un vuelo completamente completo, por lo que su asiento debería ser la única tarjeta de embarque que falte en su lista. Sin embargo, hay un inconveniente: algunos de los asientos en la parte delantera y trasera del avión no existen en este avión, por lo que también faltarán en su lista.
+
+Sin embargo, su asiento no estaba al frente o atrás; los asientos con ID +1 y -1 de los suyos estarán en su lista.
+
+¿Cuál es la identificación de su asiento?
+
+Tu respuesta al acertijo fue 682.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.

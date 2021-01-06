@@ -1,45 +1,45 @@
---- Día 2: Filosofía de la contraseña ---
-Su vuelo sale en unos días del aeropuerto costero; la forma más fácil de bajar a la costa desde aquí es en trineo .
+--- Day 2: Password Philosophy ---
+Your flight departs in a few days from the coastal airport; the easiest way down to the coast from here is via toboggan.
 
-El tendero de la tienda de alquiler de trineos del Polo Norte está teniendo un mal día. "Algo está mal con nuestras computadoras; ¡no podemos iniciar sesión!" Preguntas si puedes echar un vistazo.
+The shopkeeper at the North Pole Toboggan Rental Shop is having a bad day. "Something's wrong with our computers; we can't log in!" You ask if you can take a look.
 
-Su base de datos de contraseñas parece estar un poco dañada: algunas de las contraseñas no hubieran sido permitidas por la Política Corporativa Oficial de Tobogán que estaba en vigor cuando fueron elegidas.
+Their password database seems to be a little corrupted: some of the passwords wouldn't have been allowed by the Official Toboggan Corporate Policy that was in effect when they were chosen.
 
-Para intentar depurar el problema, han creado una lista (la entrada de su rompecabezas) de contraseñas (de acuerdo con la base de datos dañada) y la política corporativa cuando se estableció esa contraseña .
+To try to debug the problem, they have created a list (your puzzle input) of passwords (according to the corrupted database) and the corporate policy when that password was set.
 
-Por ejemplo, suponga que tiene la siguiente lista:
+For example, suppose you have the following list:
 
 1-3 a: abcde
 1-3 b: cdefg
 2-9 c: ccccccccc
-Cada línea proporciona la política de contraseñas y luego la contraseña. La política de contraseñas indica el número más bajo y más alto de veces que debe aparecer una letra determinada para que la contraseña sea válida. Por ejemplo, 1-3 asignifica que la contraseña debe contener aal menos 1tiempo y la mayoría de las 3veces.
+Each line gives the password policy and then the password. The password policy indicates the lowest and highest number of times a given letter must appear for the password to be valid. For example, 1-3 a means that the password must contain a at least 1 time and at most 3 times.
 
-En el ejemplo anterior, las 2contraseñas son válidas. La contraseña del medio cdefg, no lo es; no contiene instancias de b, pero necesita al menos 1. La primera y la tercera contraseñas son válidas: contienen una ao nueve c, ambas dentro de los límites de sus respectivas políticas.
+In the above example, 2 passwords are valid. The middle password, cdefg, is not; it contains no instances of b, but needs at least 1. The first and third passwords are valid: they contain one a or nine c, both within the limits of their respective policies.
 
-¿Cuántas contraseñas son válidas según sus políticas?
+How many passwords are valid according to their policies?
 
-Tu respuesta al acertijo fue 474.
+Your puzzle answer was 474.
 
---- La segunda parte ---
-Si bien parece que validó las contraseñas correctamente, no parecen ser lo que espera el Sistema de autenticación corporativa oficial de Toboggan.
+--- Part Two ---
+While it appears you validated the passwords correctly, they don't seem to be what the Official Toboggan Corporate Authentication System is expecting.
 
-¡El comerciante de repente se da cuenta de que accidentalmente explicó las reglas de la política de contraseñas de su antiguo trabajo en el lugar de alquiler de trineos al final de la calle! La Política Corporativa Oficial de Toboggan en realidad funciona de manera un poco diferente.
+The shopkeeper suddenly realizes that he just accidentally explained the password policy rules from his old job at the sled rental place down the street! The Official Toboggan Corporate Policy actually works a little differently.
 
-Cada política en realidad describe dos posiciones en la contraseña , donde 1significa el primer carácter, 2significa el segundo carácter, y así sucesivamente. (Tenga cuidado, las políticas corporativas de Toboggan no tienen el concepto de "índice cero"). Exactamente una de estas posiciones debe contener la letra indicada. Otras ocurrencias de la carta son irrelevantes a los efectos de la aplicación de la política.
+Each policy actually describes two positions in the password, where 1 means the first character, 2 means the second character, and so on. (Be careful; Toboggan Corporate Policies have no concept of "index zero"!) Exactly one of these positions must contain the given letter. Other occurrences of the letter are irrelevant for the purposes of policy enforcement.
 
-Dada la misma lista de ejemplo de arriba:
+Given the same example list from above:
 
-1-3 a: abcdees válido : la posición 1contiene ay la posición 3no.
-1-3 b: cdefgno es válido : ni la posición 1ni la posición 3contienen b.
-2-9 c: cccccccccno es válido : tanto la posición 2como la posición 9contienen c.
-¿Cuántas contraseñas son válidas según la nueva interpretación de las políticas?
+1-3 a: abcde is valid: position 1 contains a and position 3 does not.
+1-3 b: cdefg is invalid: neither position 1 nor position 3 contains b.
+2-9 c: ccccccccc is invalid: both position 2 and position 9 contain c.
+How many passwords are valid according to the new interpretation of the policies?
 
-Tu respuesta al acertijo fue 745.
+Your puzzle answer was 745.
 
-¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+Both parts of this puzzle are complete! They provide two gold stars: **
 
-En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+At this point, you should return to your Advent calendar and try another puzzle.
 
-Si aún desea verlo, puede obtener su entrada de rompecabezas .
+If you still want to see it, you can get your puzzle input.
 
-También puede [Compartir] este rompecabezas.
+You can also [Share] this puzzle.

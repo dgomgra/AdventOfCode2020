@@ -1,0 +1,77 @@
+--- Día 3: Trayectoria de trineo ---
+Una vez resueltos los problemas de acceso al tobogán, se dirigió hacia el aeropuerto. Si bien viajar en tobogán puede ser fácil, ciertamente no es seguro: hay una dirección mínima y el área está cubierta de árboles. Deberá ver qué ángulos lo llevarán cerca de la menor cantidad de árboles.
+
+Debido a la geología local, los árboles en esta área solo crecen en coordenadas enteras exactas en una cuadrícula. Haces un mapa (tu entrada de rompecabezas) de los cuadrados abiertos ( .) y árboles ( #) que puedes ver. Por ejemplo:
+
+..##.......
+#...#...#..
+.#....#..#.
+..#.#...#.#
+.#...##..#.
+..#.##.....
+.#.#.#....#
+.#........#
+#.##...#...
+#...##....#
+.#..#...#.#
+Sin embargo, estos no son los únicos árboles; debido a algo sobre lo que leíste una vez que involucra la genética arbórea y la estabilidad del bioma, el mismo patrón se repite a la derecha muchas veces:
+
+..##.........##.........##.........##.........##.........##.......  --->
+#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..
+.#....#..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.
+..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#
+.#...##..#..#...##..#..#...##..#..#...##..#..#...##..#..#...##..#.
+..#.##.......#.##.......#.##.......#.##.......#.##.......#.##.....  --->
+.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#
+.#........#.#........#.#........#.#........#.#........#.#........#
+#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...
+#...##....##...##....##...##....##...##....##...##....##...##....#
+.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#  --->
+Comienzas en el cuadrado abierto ( .) en la esquina superior izquierda y necesitas llegar a la parte inferior (debajo de la fila más baja en tu mapa).
+
+El tobogán solo puede seguir algunas pendientes específicas (usted optó por un modelo más económico que prefiere los números racionales); Empiece contando todos los árboles que encontraría para la pendiente de la derecha 3, hacia abajo 1 :
+
+Desde su posición inicial en la parte superior izquierda, verifique la posición 3 derecha y 1 abajo. Luego, verifique la posición 3 derecha y 1 abajo desde allí, y así sucesivamente hasta que pase la parte inferior del mapa.
+
+Las ubicaciones que verificaría en el ejemplo anterior están marcadas aquí con Odonde había un cuadrado abierto y Xdonde había un árbol:
+
+..##.........##.........##.........##.........##.........##.......  --->
+#..O#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..
+.#....X..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.
+..#.#...#O#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#
+.#...##..#..X...##..#..#...##..#..#...##..#..#...##..#..#...##..#.
+..#.##.......#.X#.......#.##.......#.##.......#.##.......#.##.....  --->
+.#.#.#....#.#.#.#.O..#.#.#.#....#.#.#.#....#.#.#.#....#.#.#.#....#
+.#........#.#........X.#........#.#........#.#........#.#........#
+#.##...#...#.##...#...#.X#...#...#.##...#...#.##...#...#.##...#...
+#...##....##...##....##...#X....##...##....##...##....##...##....#
+.#..#...#.#.#..#...#.#.#..#...X.#.#..#...#.#.#..#...#.#.#..#...#.#  --->
+En este ejemplo, si atraviesa el mapa con esta pendiente, se encontrará con 7árboles.
+
+Comenzando en la esquina superior izquierda de su mapa y siguiendo una pendiente de 3 a la derecha y 1 hacia abajo, ¿cuántos árboles encontrará?
+
+Tu respuesta al acertijo fue 184.
+
+--- La segunda parte ---
+Es hora de comprobar el resto de las pendientes; después de todo, debe minimizar la probabilidad de una parada arbórea repentina.
+
+Determine la cantidad de árboles que encontrará si, para cada una de las siguientes pendientes, comienza en la esquina superior izquierda y recorre el mapa hasta el final:
+
+Derecha 1, abajo 1.
+Derecha 3, bajada 1. (Esta es la pendiente que ya revisaste).
+Derecha 5, abajo 1.
+Derecha 7, abajo 1.
+Derecha 1, abajo 2.
+En el ejemplo anterior, estas pendientes encontrarían 2, 7, 3, 4, y el 2árbol (s), respectivamente; multiplicados juntos, estos producen la respuesta 336.
+
+¿Qué obtienes si multiplicas el número de árboles encontrados en cada una de las pendientes enumeradas?
+
+Tu respuesta al acertijo fue 2431272960.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.

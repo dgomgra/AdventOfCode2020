@@ -1,0 +1,67 @@
+--- Día 7: Mochilas prácticas ---
+Aterriza en el aeropuerto regional a tiempo para su próximo vuelo. De hecho, parece que incluso tendrá tiempo para comer algo: todos los vuelos están retrasados ​​debido a problemas en el procesamiento del equipaje .
+
+Debido a las recientes regulaciones de aviación, se están aplicando muchas reglas (su entrada de rompecabezas) sobre las maletas y su contenido; Las bolsas deben estar codificadas por colores y deben contener cantidades específicas de otras bolsas codificadas por colores. ¡Aparentemente, nadie responsable de estas regulaciones consideró cuánto tardarían en aplicarse!
+
+Por ejemplo, considere las siguientes reglas:
+
+light red bags contain 1 bright white bag, 2 muted yellow bags.
+dark orange bags contain 3 bright white bags, 4 muted yellow bags.
+bright white bags contain 1 shiny gold bag.
+muted yellow bags contain 2 shiny gold bags, 9 faded blue bags.
+shiny gold bags contain 1 dark olive bag, 2 vibrant plum bags.
+dark olive bags contain 3 faded blue bags, 4 dotted black bags.
+vibrant plum bags contain 5 faded blue bags, 6 dotted black bags.
+faded blue bags contain no other bags.
+dotted black bags contain no other bags.
+Estas reglas especifican el contenido requerido para 9 tipos de bolsas. En este ejemplo, cada faded bluebolsa está vacía, cada vibrant plumbolsa contiene 11 bolsas (5 faded bluey 6 dotted black), y así sucesivamente.
+
+Tienes una shiny goldbolsa. Si quisiera llevarlo en al menos otro bolso, ¿cuántos colores de bolso diferentes serían válidos para el bolso más externo? (En otras palabras: ¿cuántos colores pueden eventualmente contener al menos una shiny goldbolsa?)
+
+En las reglas anteriores, las siguientes opciones estarían disponibles para usted:
+
+Una bright whitebolsa, que puede contener su shiny goldbolsa directamente.
+Una muted yellowbolsa, que puede contener su shiny goldbolsa directamente, además de algunas otras bolsas.
+Una dark orangebolsa, que puede contener bright whitey muted yellowbolsas, cualquiera de las cuales podría contener su shiny goldbolsa.
+Una light redbolsa, que puede contener bright whitey muted yellowbolsas, cualquiera de las cuales podría contener su shiny goldbolsa.
+Entonces, en este ejemplo, la cantidad de colores de bolsas que eventualmente pueden contener al menos una shiny goldbolsa es 4.
+
+¿Cuántos colores de bolsas pueden eventualmente contener al menos una shiny goldbolsa? (La lista de reglas es bastante larga; asegúrese de obtenerlas todas).
+
+Tu respuesta al acertijo fue 335.
+
+--- La segunda parte ---
+Se está volviendo bastante caro volar en estos días, no por el precio de los boletos, ¡sino por la cantidad ridícula de maletas que necesita comprar!
+
+Considere nuevamente su shiny goldbolso y las reglas del ejemplo anterior:
+
+faded bluelas bolsas contienen 0otras bolsas.
+dotted blacklas bolsas contienen 0otras bolsas.
+vibrant plumLas bolsas contienen 11otras bolsas: 5 faded bluebolsas y 6 dotted blackbolsas.
+dark oliveLas bolsas contienen 7otras bolsas: 3 faded bluebolsas y 4 dotted blackbolsas.
+Por lo tanto, una sola shiny goldbolsa debe contener 1 dark olivebolsa (y las 7 bolsas que contiene ) más 2 vibrant plumbolsas (y las 11 bolsas dentro de cada una de ellas): 1 + 1*7 + 2 + 2*11= 32¡bolsas!
+
+Por supuesto, las reglas reales tienen una pequeña posibilidad de ir varios niveles más profundos que este ejemplo; asegúrese de contar todas las bolsas, ¡incluso si el anidamiento se vuelve topológicamente impráctico!
+
+Aquí hay otro ejemplo:
+
+shiny gold bags contain 2 dark red bags.
+dark red bags contain 2 dark orange bags.
+dark orange bags contain 2 dark yellow bags.
+dark yellow bags contain 2 dark green bags.
+dark green bags contain 2 dark blue bags.
+dark blue bags contain 2 dark violet bags.
+dark violet bags contain no other bags.
+En este ejemplo, una sola shiny goldbolsa debe contener 126otras bolsas.
+
+¿Cuántas bolsas individuales se requieren dentro de una sola shiny goldbolsa?
+
+Tu respuesta al acertijo fue 2431.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.
