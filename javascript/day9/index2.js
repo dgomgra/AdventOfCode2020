@@ -1,5 +1,10 @@
+/* Setup */
+const fs = require('fs');
+const path = require('path');
 
-let input = [
+ const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf8').split('\n').map(Number);
+
+let inpu_test = [
     "20",
     "35",
     "15",
@@ -23,9 +28,9 @@ let input = [
     ""
 ];
 
-/* Part 1 */
-resolvePart1();
-function resolvePart1(){
+/* Part 2 */
+resolvePart();
+function resolvePart(){
     let preambulo = [];
     let resto = [];
     let listaCompleta = [];
@@ -34,7 +39,7 @@ function resolvePart1(){
     for(let n of input){
         if(n !== ''){
             listaCompleta.push(parseInt(n));
-            if(cont < 5){
+            if(cont < 25){
                 preambulo.push(parseInt(n));
             } else {
                 resto.push(parseInt(n));
@@ -66,32 +71,39 @@ function resolvePart1(){
     }
 
     let valor = contiguos(numbers[0], listaCompleta);
-    console.log(valor);
-
-    // console.log(preambulo);
-    // console.log(resto);
-    // console.log(numbers);
+    console.log('La respuesta a la segunda parte: ', valor);
 
     
 }
 
 function contiguos(number, lista){
-    console.log(number);
-    console.log(lista);
-
-    for (let index = 0; index < lista.length; index++) {
-        let valor = lista[0];
-        let contador = 1;
+    let inicio = 0;
+    let contador = 1;
+    let arrayNumbers = [];
+    for (let index = inicio; index < lista.length; index++) {
+        let valor = lista[inicio];
+        arrayNumbers.push(valor);
         while(number > valor ){
             valor += lista[contador];
+            arrayNumbers.push(lista[contador]);
             contador++;
         }
 
         if(valor === number){
-            return valor;
+            // Ordenamos el array
+            arrayNumbers.sort(function(a, b) {
+                return a - b;
+              });
+            let first = arrayNumbers[0];
+            let last = arrayNumbers[arrayNumbers.length - 1];
+            let resultado = first + last;
+            return resultado;
+        } else {
+            inicio++;
+            contador = inicio + 1;
+            arrayNumbers.splice(0, arrayNumbers.length);
         }
         
     }
 
 }
-

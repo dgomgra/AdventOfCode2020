@@ -1,40 +1,19 @@
+/* Setup */
+const fs = require('fs');
+const path = require('path');
 
-let input = [
-    "20",
-    "35",
-    "15",
-    "25",
-    "47",
-    "40",
-    "62",
-    "55",
-    "65",
-    "95",
-    "102",
-    "117",
-    "150",
-    "182",
-    "127",
-    "219",
-    "299",
-    "277",
-    "309",
-    "576",
-    ""
-];
+const input = fs.readFileSync(path.join(__dirname, './input.txt'), 'utf8').split('\n').map(Number);
 
 /* Part 1 */
 resolvePart1();
 function resolvePart1(){
     let preambulo = [];
     let resto = [];
-    let listaCompleta = [];
 
     let cont = 0;
     for(let n of input){
         if(n !== ''){
-            listaCompleta.push(parseInt(n));
-            if(cont < 5){
+            if(cont < 25){
                 preambulo.push(parseInt(n));
             } else {
                 resto.push(parseInt(n));
@@ -57,7 +36,6 @@ function resolvePart1(){
 
         if(!encontrado) {
             numbers.push(resto[index]);
-            break;
         } else {
             preambulo.shift(); // Eliminamos el primer elemento
             preambulo.push(resto[index]); // Añadimos el numero evaluado
@@ -65,33 +43,10 @@ function resolvePart1(){
         
     }
 
-    let valor = contiguos(numbers[0], listaCompleta);
-    console.log(valor);
-
-    // console.log(preambulo);
-    // console.log(resto);
-    // console.log(numbers);
+    console.log(preambulo);
+    console.log(resto);
+    console.log(numbers);
+    console.log('La respuesta a la primera parte: ', numbers[0]);
 
     
 }
-
-function contiguos(number, lista){
-    console.log(number);
-    console.log(lista);
-
-    for (let index = 0; index < lista.length; index++) {
-        let valor = lista[0];
-        let contador = 1;
-        while(number > valor ){
-            valor += lista[contador];
-            contador++;
-        }
-
-        if(valor === number){
-            return valor;
-        }
-        
-    }
-
-}
-

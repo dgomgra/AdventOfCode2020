@@ -1,0 +1,88 @@
+--- Día 9: Error de codificación ---
+Con su vecino disfrutando feliz de su videojuego, dirige su atención a un puerto de datos abierto en la pequeña pantalla en el asiento frente a usted.
+
+Aunque el puerto no es estándar, puede conectarlo a su computadora mediante el uso inteligente de varios clips. Tras la conexión, el puerto genera una serie de números (su entrada de rompecabezas).
+
+Los datos parecen estar cifrados con el sistema de adición de enmascaramiento eXchange ( XMAS ) que, convenientemente para usted, es un cifrado antiguo con una debilidad importante.
+
+XMAS comienza transmitiendo un preámbulo de 25 números. Después de eso, cada número que reciba debe ser la suma de dos de los 25 números inmediatamente anteriores. Los dos números tendrán valores diferentes y puede haber más de uno de esos pares.
+
+Por ejemplo, suponga que su preámbulo consta de los números 1hasta 25en un orden aleatorio. Para ser válido, el siguiente número debe ser la suma de dos de esos números:
+
+26sería un número siguiente válido , ya que podría ser 1más 25(o muchos otros pares, como 2y 24).
+49sería un número siguiente válido , ya que es la suma de 24y 25.
+100que no sea válida; no suman dos de los 25 números anteriores 100.
+50También podría no ser válido; aunque 25aparece en los 25 números anteriores, los dos números del par deben ser diferentes.
+Suponga que el número 26 es 45, y el primer número (ya no es una opción, ya que hace más de 25 números) lo era 20. Ahora, para que el siguiente número sea válido, debe haber un par de números entre 1- 19, 21- 25, o 45que se sumen a él:
+
+26seguirá siendo un número siguiente válido , ya que 1y 25todavía están dentro de los 25 números anteriores.
+65que no sea válida, ya que no hay dos de los números disponibles sumar a ella.
+64y 66ambos serían válidos , ya que son el resultado de 19+45y 21+45respectivamente.
+Aquí hay un ejemplo más grande que solo considera los 5 números anteriores (y tiene un preámbulo de longitud 5):
+
+35
+20
+15
+25
+47
+40
+62
+55
+65
+95
+102
+117
+150
+182
+127
+219
+299
+277
+309
+576
+En este ejemplo, después del preámbulo de los 5 números, casi todos los números son la suma de dos de los 5 números anteriores; el único número que no sigue esta regla es 127.
+
+El primer paso para atacar la debilidad en los datos de XMAS es encontrar el primer número en la lista (después del preámbulo) que no es la suma de dos de los 25 números anteriores. ¿Cuál es el primer número que no tiene esta propiedad?
+
+Tu respuesta al acertijo fue 29221323.
+
+--- La segunda parte ---
+El último paso para romper el cifrado XMAS se basa en el número no válido que acaba de encontrar: debe encontrar un conjunto contiguo de al menos dos números en su lista que sumen el número no válido del paso 1.
+
+Considere nuevamente el ejemplo anterior:
+
+35
+20
+15
+25
+47
+40
+62
+55
+65
+95
+102
+117
+150
+182
+127
+219
+299
+277
+309
+576
+En esta lista, la suma de todos los números de 15por medio 40produce el número no válido desde el paso 1, 127. (Por supuesto, el conjunto contiguo de números en su lista real podría ser mucho más largo).
+
+Para encontrar la debilidad del cifrado , sume el número más pequeño y más grande en este rango contiguo; en este ejemplo, estos son 15y 47, produciendo 62.
+
+¿Cuál es la debilidad del cifrado en su lista de números cifrados con XMAS?
+
+Tu respuesta al acertijo fue 4389369.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar otro rompecabezas.
+
+Si aún desea verlo, puede obtener su entrada de rompecabezas .
+
+También puede [Compartir] este rompecabezas.
