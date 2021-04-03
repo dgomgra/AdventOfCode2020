@@ -24,7 +24,11 @@ function combinacion(array, memo={}){
         }        
     }
     memo[key] = result;
-    return memo;
+
+    if(result === 8) {
+        console.log(memo);
+    }
+    return result;
 }
 
 console.log(combinacion(input));

@@ -1,0 +1,201 @@
+--- Día 11: Sistema de asientos ---
+Su avión aterriza con mucho tiempo de sobra. El tramo final de su viaje es un ferry que va directamente a la isla tropical donde finalmente puede comenzar sus vacaciones. Al llegar a la sala de espera para abordar el ferry, se da cuenta de que es tan temprano que nadie más ha llegado todavía.
+
+Al modelar el proceso que las personas usan para elegir (o abandonar) su asiento en el área de espera, está bastante seguro de que puede predecir el mejor lugar para sentarse. Haces un mapa rápido de la distribución de los asientos (tu entrada de rompecabezas).
+
+La distribución del asiento encaja perfectamente en una rejilla. Cada posición es piso ( .), un asiento vacío ( L) o un asiento ocupado ( #). Por ejemplo, el diseño inicial del asiento podría verse así:
+
+L.LL.LL.LL
+LLLLLLL.LL
+L.L.L..L..
+LLLL.LL.LL
+L.LL.LL.LL
+L.LLLLL.LL
+..L.L.....
+LLLLLLLLLL
+L.LLLLLL.L
+L.LLLLL.LL
+Ahora, solo necesita modelar a las personas que llegarán en breve. Afortunadamente, las personas son completamente predecibles y siempre siguen un conjunto simple de reglas. Todas las decisiones se basan en la cantidad de asientos ocupados adyacentes a un asiento dado (una de las ocho posiciones inmediatamente arriba, abajo, izquierda, derecha o diagonal desde el asiento). Las siguientes reglas se aplican a todos los asientos simultáneamente:
+
+Si un asiento está vacío ( L) y no hay asientos ocupados adyacentes, el asiento se ocupa .
+Si un asiento está ocupado ( #) y cuatro o más asientos adyacentes también están ocupados, el asiento queda vacío .
+De lo contrario, el estado del asiento no cambia.
+Floor ( .) nunca cambia ; los asientos no se mueven y nadie se sienta en el suelo.
+
+Después de una ronda de estas reglas, todos los asientos en el diseño de ejemplo quedan ocupados:
+
+#.##.##.##
+#######.##
+#.#.#..#..
+####.##.##
+#.##.##.##
+#.#####.##
+..#.#.....
+##########
+#.######.#
+#.#####.##
+Después de una segunda ronda, los asientos con cuatro o más asientos adyacentes ocupados vuelven a estar vacíos:
+
+#.LL.L#.##
+#LLLLLL.L#
+L.L.L..L..
+#LLL.LL.L#
+#.LL.LL.LL
+#.LLLL#.##
+..L.L.....
+#LLLLLLLL#
+#.LLLLLL.L
+#.#LLLL.##
+Este proceso continúa durante tres rondas más:
+
+#.##.L#.##
+#L###LL.L#
+L.#.#..#..
+#L##.##.L#
+#.##.LL.LL
+#.###L#.##
+..#.#.....
+#L######L#
+#.LL###L.L
+#.#L###.##
+#.#L.L#.##
+#LLL#LL.L#
+L.L.L..#..
+#LLL.##.L#
+#.LL.LL.LL
+#.LL#L#.##
+..L.L.....
+#L#LLLL#L#
+#.LLLLLL.L
+#.#L#L#.##
+#.#L.L#.##
+#LLL#LL.L#
+L.#.L..#..
+#L##.##.L#
+#.#L.LL.LL
+#.#L#L#.##
+..L.L.....
+#L#L##L#L#
+#.LLLLLL.L
+#.#L#L#.##
+At this point, something interesting happens: the chaos stabilizes and further applications of these rules cause no seats to change state! Once people stop moving around, you count 37 occupied seats.
+
+Simulate your seating area by applying the seating rules repeatedly until no seats change state. How many seats end up occupied?
+
+Your puzzle answer was 2361.
+
+--- Part Two ---
+As soon as people start to arrive, you realize your mistake. People don't just care about adjacent seats - they care about the first seat they can see in each of those eight directions!
+
+Now, instead of considering just the eight immediately adjacent seats, consider the first seat in each of those eight directions. For example, the empty seat below would see eight occupied seats:
+
+.......#.
+...#.....
+.#.......
+.........
+..#L....#
+....#....
+.........
+#........
+...#.....
+The leftmost empty seat below would only see one empty seat, but cannot see any of the occupied ones:
+
+.............
+.L.L.#.#.#.#.
+.............
+The empty seat below would see no occupied seats:
+
+.##.##.
+#.#.#.#
+##...##
+...L...
+##...##
+#.#.#.#
+.##.##.
+Además, la gente parece ser más tolerante de lo que esperaba: ahora se necesitan cinco o más asientos ocupados visibles para que un asiento ocupado quede vacío (en lugar de cuatro o más de las reglas anteriores). Las otras reglas todavía se aplican: los asientos vacíos que no ven asientos ocupados se vuelven ocupados, los asientos que no coinciden con ninguna regla no cambian y el piso nunca cambia.
+
+Dado el mismo diseño inicial que el anterior, estas nuevas reglas hacen que el área de asientos se mueva de la siguiente manera:
+
+L.LL.LL.LL
+LLLLLLL.LL
+L.L.L..L..
+LLLL.LL.LL
+L.LL.LL.LL
+L.LLLLL.LL
+..L.L.....
+LLLLLLLLLL
+L.LLLLLL.L
+L.LLLLL.LL
+#.##.##.##
+#######.##
+#.#.#..#..
+####.##.##
+#.##.##.##
+#.#####.##
+..#.#.....
+##########
+#.######.#
+#.#####.##
+#.LL.LL.L#
+#LLLLLL.LL
+L.L.L..L..
+LLLL.LL.LL
+L.LL.LL.LL
+L.LLLLL.LL
+..L.L.....
+LLLLLLLLL#
+#.LLLLLL.L
+#.LLLLL.L#
+#.L#.##.L#
+#L#####.LL
+L.#.#..#..
+##L#.##.##
+#.##.#L.##
+#.#####.#L
+..#.#.....
+LLL####LL#
+#.L#####.L
+#.L####.L#
+#.L#.L#.L#
+#LLLLLL.LL
+L.L.L..#..
+##LL.LL.L#
+L.LL.LL.L#
+#.LLLLL.LL
+..L.L.....
+LLLLLLLLL#
+#.LLLLL#.L
+#.L#LL#.L#
+#.L#.L#.L#
+#LLLLLL.LL
+L.L.L..#..
+##L#.#L.L#
+L.L#.#L.L#
+#.L####.LL
+..#.#.....
+LLL###LLL#
+#.LLLLL#.L
+#.L#LL#.L#
+#.L#.L#.L#
+#LLLLLL.LL
+L.L.L..#..
+##L#.#L.L#
+L.L#.LL.L#
+#.LLLL#.LL
+..#.L.....
+LLL###LLL#
+#.LLLLL#.L
+#.L#LL#.L#
+Nuevamente, en este punto, la gente deja de moverse y la zona de asientos alcanza el equilibrio. Una vez que esto ocurre, cuenta los 26asientos ocupados.
+
+Dado el nuevo método de visibilidad y el cambio de reglas para que los asientos ocupados se vacíen, una vez que se alcanza el equilibrio, ¿cuántos asientos terminan ocupados?
+
+Tu respuesta al acertijo fue 2119.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar con otro rompecabezas.
+
+Si aún desea verlo, puede obtener la entrada de su rompecabezas .
+
+También puede [Compartir] este rompecabezas.
