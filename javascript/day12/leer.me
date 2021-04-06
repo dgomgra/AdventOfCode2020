@@ -1,0 +1,70 @@
+--- Día 12: Riesgo de lluvia ---
+Su ferry hizo un progreso decente hacia la isla, pero la tormenta llegó más rápido de lo que nadie esperaba . ¡El ferry debe realizar acciones evasivas !
+
+Desafortunadamente, la computadora de navegación del barco parece estar funcionando mal; en lugar de dar una ruta directamente a la seguridad, produjo instrucciones extremadamente tortuosas. Cuando el capitán usa el sistema de megafonía para preguntar si alguien puede ayudar, usted se ofrece rápidamente como voluntario.
+
+Las instrucciones de navegación (su entrada de puzzle) se compone de una secuencia de un solo carácter acciones combinadas con entrada número entero valores . Después de mirarlos durante unos minutos, averigua lo que probablemente significan:
+
+Acción Nsignifica moverse hacia el norte por el valor dado.
+Acción Ssignifica moverse hacia el sur por el valor dado.
+Acción Esignifica moverse hacia el este por el valor dado.
+Acción Wsignifica moverse hacia el oeste por el valor dado.
+Acción Lsignifica girar a la izquierda el número de grados dado.
+Acción Rsignifica girar a la derecha el número de grados dado.
+Acción Fsignifica avanzar por el valor dado en la dirección en la que se encuentra el barco.
+El barco comienza mirando hacia el este . Solo las acciones Ly Rcambian la dirección en la que mira el barco. (Es decir, si el barco está orientado hacia el este y la siguiente instrucción es N10, el barco se movería hacia el norte 10 unidades, pero aún así se movería hacia el este si se realizara la siguiente acción F).
+
+Por ejemplo:
+
+F10
+N3
+F7
+R90
+F11
+Estas instrucciones se manejarían de la siguiente manera:
+
+F10movería el barco 10 unidades al este (porque el barco comienza mirando al este) al este 10, al norte 0 .
+N3movería el barco 3 unidades de norte a este 10, norte 3 .
+F7movería el barco otras 7 unidades al este (porque el barco todavía está mirando al este) al este 17, al norte 3 .
+R90haría que el barco virara a la derecha 90 grados y mirara al sur ; permanece en el este 17, norte 3 .
+F11movería el barco 11 unidades de sur a este 17, sur 8 .
+Al final de estas instrucciones, la distancia de Manhattan del barco (suma de los valores absolutos de su posición este / oeste y su posición norte / sur) desde su posición inicial es 17 + 8= 25.
+
+Averigüe adónde conducen las instrucciones de navegación. ¿Cuál es la distancia de Manhattan entre esa ubicación y la posición de partida del barco?
+
+Tu respuesta al acertijo fue 1533.
+
+--- La segunda parte ---
+Antes de que pueda darle el destino al capitán, se da cuenta de que los significados de la acción real estaban impresos en la parte posterior de las instrucciones todo el tiempo.
+
+Casi todas las acciones indican cómo mover un waypoint que es relativo a la posición del barco:
+
+Acción Nsignifica mover el waypoint hacia el norte según el valor dado.
+Acción Ssignifica mover el waypoint hacia el sur según el valor dado.
+Acción Esignifica mover el waypoint hacia el este por el valor dado.
+Acción Wsignifica mover el waypoint hacia el oeste por el valor dado.
+Acción Lsignifica rotar el waypoint alrededor del barco a la izquierda ( en sentido antihorario ) el número de grados dado.
+Acción Rsignifica rotar el waypoint alrededor del barco a la derecha (en el sentido de las agujas del reloj ) el número de grados dado.
+Acción Fsignifica avanzar hasta el punto de ruta un número de veces igual al valor dado.
+El punto de ruta comienza 10 unidades al este y 1 unidad al norte con respecto al barco. El waypoint es relativo al barco; es decir, si el barco se mueve, el waypoint se mueve con él.
+
+Por ejemplo, usando las mismas instrucciones que arriba:
+
+F10mueve el barco al punto de referencia 10 veces (un total de 100 unidades al este y 10 unidades al norte ), dejando el barco al este 100, al norte 10 . El waypoint permanece 10 unidades al este y 1 unidad al norte del barco.
+N3mueve el punto de ruta 3 unidades al norte a 10 unidades al este y 4 unidades al norte del barco . El barco permanece en el este 100, norte 10 .
+F7mueve el barco al waypoint 7 veces (un total de 70 unidades al este y 28 unidades al norte ), dejando el barco en el 170 este, 38 al norte . El waypoint permanece 10 unidades al este y 4 unidades al norte del barco.
+R90gira el punto de referencia alrededor del barco en el sentido de las agujas del reloj 90 grados, moviéndolo a 4 unidades al este y 10 unidades al sur del barco . El barco permanece en 170 este, 38 norte .
+F11mueve el barco al punto de referencia 11 veces (un total de 44 unidades al este y 110 unidades al sur ), dejando el barco al este 214, al sur 72 . El waypoint permanece 4 unidades al este y 10 unidades al sur del barco.
+Después de estas operaciones, la distancia de Manhattan del barco desde su posición inicial es 214 + 72= 286.
+
+Averigüe adónde conducen realmente las instrucciones de navegación. ¿Cuál es la distancia de Manhattan entre esa ubicación y la posición de partida del barco?
+
+Tu respuesta al acertijo fue 25235.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar con otro rompecabezas.
+
+Si aún desea verlo, puede obtener la entrada de su rompecabezas .
+
+También puede [Compartir] este rompecabezas.

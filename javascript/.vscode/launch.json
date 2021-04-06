@@ -6,6 +6,8 @@
     "configurations": [
 
 
+
+
         {
             "type": "pwa-node",
             "request": "launch",
@@ -13,7 +15,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\day10\\index2.js"
+            "program": "${workspaceFolder}\\day12\\index2.js"
         }
     ]
 }
