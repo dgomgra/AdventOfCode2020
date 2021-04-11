@@ -8,6 +8,9 @@
 
 
 
+
+
+
         {
             "type": "pwa-node",
             "request": "launch",
@@ -15,7 +18,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\day12\\index2.js"
+            "program": "${workspaceFolder}\\day13\\index2_other.js"
         }
     ]
 }
