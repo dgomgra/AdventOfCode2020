@@ -1,0 +1,95 @@
+--- Día 14: Datos de acoplamiento ---
+Cuando su ferry se acerca al puerto marítimo, el capitán vuelve a pedir su ayuda. El sistema informático que ejecuta este puerto no es compatible con el programa de acoplamiento del ferry, por lo que los parámetros de acoplamiento no se inicializan correctamente en la memoria del programa de acoplamiento.
+
+Después de una breve inspección, descubre que el sistema informático del puerto marítimo utiliza un extraño sistema de máscara de bits en su programa de inicialización. Aunque no tenga a mano el chip decodificador correcto, ¡puede emularlo en el software!
+
+El programa de inicialización (su entrada de rompecabezas) puede actualizar la máscara de bits o escribir un valor en la memoria. Los valores y las direcciones de memoria son enteros sin signo de 36 bits. Por ejemplo, ignorando las máscaras de bits por un momento, una línea como mem[8] = 11escribiría el valor 11en la dirección de memoria 8.
+
+La máscara de bits siempre se da como una cadena de 36 bits, escrita con el bit más significativo (que representa 2^35) a la izquierda y el bit menos significativo ( 2^0es decir, el 1bit s) a la derecha. La máscara de bits actual se aplica a los valores inmediatamente antes de que se escriben en la memoria: una 0o 1sobrescribe el bit correspondiente en el valor, mientras que una Xlas hojas de la broca en el valor sin cambios.
+
+Por ejemplo, considere el siguiente programa:
+
+mask = XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
+mem[8] = 11
+mem[7] = 101
+mem[8] = 0
+Este programa comienza especificando una máscara de bits ( mask = ....). La máscara que especifica sobrescribirá dos bits en cada valor escrito: el 2bit s se sobrescribe 0y el 64bit s se sobrescribe 1.
+
+Luego, el programa intenta escribir el valor 11en la dirección de memoria 8. Al expandir todo a bits individuales, la máscara se aplica de la siguiente manera:
+
+value:  000000000000000000000000000000001011  (decimal 11)
+mask:   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
+result: 000000000000000000000000000001001001  (decimal 73)
+Entonces, debido a la máscara, el valor 73se escribe en la dirección de memoria 8. Luego, el programa intenta escribir 101a la dirección 7:
+
+value:  000000000000000000000000000001100101  (decimal 101)
+mask:   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
+result: 000000000000000000000000000001100101  (decimal 101)
+Esta vez, la máscara no tiene ningún efecto, ya que los bits que sobrescribió ya eran los valores que la máscara intentó establecer. Finalmente, el programa intenta escribir 0para abordar 8:
+
+value:  000000000000000000000000000000000000  (decimal 0)
+mask:   XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX0X
+result: 000000000000000000000000000001000000  (decimal 64)
+64se escribe en la dirección en su 8lugar, sobrescribiendo el valor que estaba allí anteriormente.
+
+Para inicializar el programa de atraque de su ferry, necesita la suma de todos los valores que quedan en la memoria después de que se completa el programa de inicialización. (Todo el espacio de direcciones de 36 bits comienza inicializado al valor 0en cada dirección). En el ejemplo anterior, solo dos valores en la memoria no son cero - 101(en la dirección 7) y 64(en la dirección 8) - produciendo una suma de 165.
+
+Ejecute el programa de inicialización. ¿Cuál es la suma de todos los valores que quedan en la memoria después de que se completa? (No trunque la suma a 36 bits).
+
+Tu respuesta al acertijo fue 13865835758282.
+
+--- La segunda parte ---
+Por alguna razón, el sistema informático del puerto marítimo aún no puede comunicarse con el programa de atraque de su ferry. ¡Debe estar usando la versión 2 del chip decodificador!
+
+Un chip decodificador de la versión 2 no modifica en absoluto los valores que se escriben. En cambio, actúa como un decodificador de direcciones de memoria . Inmediatamente antes de escribir un valor en la memoria, cada bit de la máscara de bits modifica el bit correspondiente de la dirección de memoria de destino de la siguiente manera:
+
+Si el bit de máscara de bits es 0, el bit de dirección de memoria correspondiente no cambia .
+Si el bit de máscara de bits es 1, el bit de dirección de memoria correspondiente se sobrescribe con1 .
+Si el bit de máscara de bits es X, el bit de dirección de memoria correspondiente es flotante .
+Un bit flotante no está conectado a nada y, en cambio, fluctúa de forma impredecible. En la práctica, esto significa que los bits flotantes tomarán todos los valores posibles , ¡potencialmente causando que se escriban muchas direcciones de memoria todas a la vez!
+
+Por ejemplo, considere el siguiente programa:
+
+mask = 000000000000000000000000000000X1001X
+mem[42] = 100
+mask = 00000000000000000000000000000000X0XX
+mem[26] = 1
+Cuando este programa va a escribir en la dirección de memoria 42, primero aplica la máscara de bits:
+
+address: 000000000000000000000000000000101010  (decimal 42)
+mask:    000000000000000000000000000000X1001X
+result:  000000000000000000000000000000X1101X
+Después de aplicar la máscara, se sobrescriben cuatro bits, tres de los cuales son diferentes y dos son flotantes . Los bits flotantes toman todas las combinaciones posibles de valores; con dos bits flotantes, se escriben cuatro direcciones de memoria reales:
+
+000000000000000000000000000000011010  (decimal 26)
+000000000000000000000000000000011011  (decimal 27)
+000000000000000000000000000000111010  (decimal 58)
+000000000000000000000000000000111011  (decimal 59)
+A continuación, el programa está a punto de escribir en la dirección de memoria 26con una máscara de bits diferente:
+
+address: 000000000000000000000000000000011010  (decimal 26)
+mask:    00000000000000000000000000000000X0XX
+result:  00000000000000000000000000000001X0XX
+Esto da como resultado una dirección con tres bits flotantes, lo que provoca que se escriban ocho direcciones de memoria:
+
+000000000000000000000000000000010000  (decimal 16)
+000000000000000000000000000000010001  (decimal 17)
+000000000000000000000000000000010010  (decimal 18)
+000000000000000000000000000000010011  (decimal 19)
+000000000000000000000000000000011000  (decimal 24)
+000000000000000000000000000000011001  (decimal 25)
+000000000000000000000000000000011010  (decimal 26)
+000000000000000000000000000000011011  (decimal 27)
+Todo el espacio de direcciones de 36 bits aún comienza inicializado al valor 0 en cada dirección, y aún necesita la suma de todos los valores que quedan en la memoria al final del programa. En este ejemplo, la suma es 208.
+
+Ejecute el programa de inicialización utilizando un emulador para un chip decodificador versión 2. ¿Cuál es la suma de todos los valores que quedan en la memoria después de que se completa?
+
+Tu respuesta al acertijo fue 4195339838136.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar con otro rompecabezas.
+
+Si aún desea verlo, puede obtener la entrada de su rompecabezas .
+
+También puede [Compartir] este rompecabezas.
