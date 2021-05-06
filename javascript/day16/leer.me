@@ -1,0 +1,72 @@
+--- Día 16: Traducción de billetes ---
+Mientras camina hacia otro vuelo de conexión, se da cuenta de que uno de los tramos de su viaje redirigido que se aproxima es en un tren de alta velocidad. Sin embargo, el boleto de tren que le entregaron está en un idioma que no comprende. Probablemente debería averiguar qué dice antes de llegar a la estación de tren después del próximo vuelo.
+
+Desafortunadamente, no puede leer las palabras en el boleto . Sin embargo, puede leer los números y, por lo tanto, averiguar los campos que deben tener estos tickets y los rangos válidos para los valores en esos campos.
+
+Recopila las reglas para los campos de boletos , los números en su boleto y los números en otros boletos cercanos para el mismo servicio de tren (a través de las cámaras de seguridad del aeropuerto) juntos en un solo documento al que puede hacer referencia (su entrada de rompecabezas).
+
+Las reglas para los campos del ticket especifican una lista de campos que existen en algún lugar del ticket y los rangos válidos de valores para cada campo. Por ejemplo, una regla como class: 1-3 or 5-7significa que uno de los campos en cada ticket tiene un nombre classy puede ser cualquier valor en los rangos 1-3o 5-7(inclusive, de modo que 3y 5ambos son válidos en este campo, pero 4no lo es).
+
+Cada ticket está representado por una única línea de valores separados por comas. Los valores son los números del ticket en el orden en que aparecen; cada ticket tiene el mismo formato. Por ejemplo, considere este boleto:
+
+.--------------------------------------------------------.
+| ????: 101    ?????: 102   ??????????: 103     ???: 104 |
+|                                                        |
+| ??: 301  ??: 302             ???????: 303      ??????? |
+| ??: 401  ??: 402           ???? ????: 403    ????????? |
+'--------------------------------------------------------'
+Aquí, ?representa texto en un idioma que no comprende. Este ticket puede representarse como 101,102,103,104,301,302,303,401,402,403; por supuesto, los billetes de tren reales que estás viendo son mucho más complicados. En cualquier caso, ha extraído solo los números de tal manera que el primer número es siempre el mismo campo específico, el segundo número es siempre un campo específico diferente, y así sucesivamente, simplemente no sabe qué es cada posición en realidad ¡medio!
+
+Empiece por determinar qué boletos son completamente inválidos ; estos son tickets que contienen valores que no son válidos para ningún campo . Ignore su boleto por ahora.
+
+Por ejemplo, suponga que tiene las siguientes notas:
+
+class: 1-3 or 5-7
+row: 6-11 or 33-44
+seat: 13-40 or 45-50
+
+your ticket:
+7,1,14
+
+nearby tickets:
+7,3,47
+40,4,50
+55,2,20
+38,6,12
+No importa qué posición corresponde a qué campo; puede identificar boletos cercanos no válidos considerando solo si los boletos contienen valores que no son válidos para ningún campo . En este ejemplo, los valores del primer ticket cercano son todos válidos para al menos un campo. Esto no es cierto de los otros tres entradas cercanas : los valores 4, 55y 12son no son válidos para cualquier campo. La suma de todos los valores no válidos produce la tasa de error de escaneo de boletos : 4 + 55 + 12= 71.
+
+Considere la validez de los boletos cercanos que escaneó. ¿Cuál es su tasa de error de escaneo de boletos?
+
+Tu respuesta al acertijo fue 24980.
+
+--- La segunda parte ---
+Ahora que ha identificado qué tickets contienen valores no válidos, deséchelos por completo . Utilice los tickets válidos restantes para determinar qué campo es cuál.
+
+Utilizando los rangos válidos para cada campo, determine en qué orden aparecen los campos en los tickets. El orden es consistente entre todos los boletos: si seates el tercer campo, es el tercer campo en cada boleto, incluido su boleto .
+
+Por ejemplo, suponga que tiene las siguientes notas:
+
+class: 0-1 or 4-19
+row: 0-5 or 8-19
+seat: 0-13 or 16-19
+
+your ticket:
+11,12,13
+
+nearby tickets:
+3,9,18
+15,1,5
+5,14,9
+Según los boletos cercanos en el ejemplo anterior, la primera posición debe ser row, la segunda posición debe ser classy la tercera posición debe ser seat; puede concluir que en su boleto , classes 12, rowes 11y seates 13.
+
+Una vez que sepa qué campo es cuál, busque los seis campos en su ticket que comienzan con la palabra departure. ¿Qué obtienes si multiplicas esos seis valores juntos?
+
+Tu respuesta al acertijo fue 809376774329.
+
+¡Ambas partes de este rompecabezas están completas! Proporcionan dos estrellas doradas: **
+
+En este punto, debes volver a tu calendario de Adviento y probar con otro rompecabezas.
+
+Si aún desea verlo, puede obtener la entrada de su rompecabezas .
+
+También puede [Compartir] este rompecabezas.
